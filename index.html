@@ -6,13 +6,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Plantanding</title>
+  <link rel="preload" href="css/style.css" as="style">
+  <link href="css/style.css" rel="stylesheet">
+
 </head>
 
-<body>
+<body class="contenedor">
   <header>
-    <nav>
+    <nav class="nav">
       <div>
-        <img src="#" alt="Logo plantanding">
+        <img class="logo" src="img/Logo_recortado.png" alt="Logo plantanding">
       </div>
 
       <!-- BUSCADOR -->
@@ -20,7 +23,7 @@
       <div>
         <form>
           <label>
-            <input type="text" placeholder="Buscar en Plantanding">
+            <input type="text" placeholder="Buscar en Plantanding" class="buscador">
           </label>
 
           <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-leaf" width="50" height="50"
@@ -35,7 +38,7 @@
 
       <!-- ICONOS ACCESOS -->
 
-      <div>
+      <div class="iconos">
         <div>
           <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="50" height="50"
             viewBox="0 0 24 24" stroke-width="1" stroke="#009988" fill="none" stroke-linecap="round"
@@ -76,23 +79,414 @@
           </svg>
         </div>
       </div>
+    </nav>
 
-      <!-- MENÚ DE NAVEGACIÓN -->
+    <!-- MENÚ DE NAVEGACIÓN -->
 
-      <div>
-        <h1 id="plantas">PLANTAS</h1>
-        <h1 id="jardín">JARDÍN</h1>
-        <h1 id="servicios">SERVICIOS</h1>
-        <h1 id="blog">BLOG</h1>
-        <h1 id="plantanding">PLANTANDING</h1>
+    <nav>
+      <div class="menu">
+        <h1 id="plantas">
+          PLANTAS
+        </h1>
+
+        <h1 id="jardín">
+          JARDÍN
+        </h1>
+
+        <h1 id="servicios">
+          SERVICIOS
+        </h1>
+
+        <h1 id="blog">
+          BLOG
+        </h1>
+
+        <h1 id="plantanding">
+          PLANTANDING
+        </h1>
       </div>
     </nav>
   </header>
 
-  <!-- OFERTAS/APP/NOVEDADES -->
+  <!-- OFERTAS/APP/NOVEDADES --> <!-- Hacer un carrousel de texto???? -->
   <section>
-    
+    <div>
+      <div>
+        <h2>
+          Ofertas
+        </h2>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo natus ipsam amet eum harum. Eligendi odio
+          tempore voluptates nemo ratione optio, sapiente id quisquam perferendis voluptatem nesciunt aspernatur
+          laborum? Blanditiis!
+        </p>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo natus ipsam amet eum harum. Eligendi odio
+          tempore voluptates nemo ratione optio, sapiente id quisquam perferendis voluptatem nesciunt aspernatur
+          laborum? Blanditiis!
+        </p>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo natus ipsam amet eum harum. Eligendi odio
+          tempore voluptates nemo ratione optio, sapiente id quisquam perferendis voluptatem nesciunt aspernatur
+          laborum? Blanditiis!
+        </p>
+
+      </div>
+
+      <div>
+        <h2>
+          App Móvil
+        </h2>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis voluptate sed magnam quisquam mollitia labore
+          dolor quam ab ex unde expedita, voluptates exercitationem id, iure facilis architecto, natus quae non?
+        </p>
+      </div>
+
+      <div>
+        <h2>
+          Novedades
+        </h2>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo natus ipsam amet eum harum. Eligendi odio
+          tempore voluptates nemo ratione optio, sapiente id quisquam perferendis voluptatem nesciunt aspernatur
+          laborum? Blanditiis!
+        </p>
+      </div>
+    </div>
   </section>
 
+  <!-- CATEGORÍAS DESTACADAS -->
+
+  <section>
+    <h2>
+      Categorias destacadas
+    </h2>
+    <ul>
+      <li>
+        Plantas de hoja verde
+      </li>
+
+      <li>
+        Suculentas
+      </li>
+
+      <li>
+        Arbustos de jardín
+      </li>
+
+      <li>
+        Árboles frutales
+      </li>
+
+      <li>
+        De temporada
+      </li>
+
+      <li>
+        Macetas y jardineras
+      </li>
+
+      <li>
+        Bonsais
+      </li>
+
+      <li>
+        Huerto
+      </li>
+    </ul>
+  </section>
+
+  <!-- ACCESOS -->
+
+  <section>
+    <div>
+      <h3>
+        Hoja verde
+      </h3>
+      <img src="#" alt="Planta hoja verde1">
+      <img src="#" alt="Planta hoja verde2">
+      <img src="#" alt="Planta hoja verde3">
+      <img src="#" alt="Planta hoja verde4">
+    </div>
+
+    <div>
+      <h3>
+        Acuarios
+      </h3>
+      <img src="#" alt="Acuario1">
+      <img src="#" alt="Acuario2">
+      <img src="#" alt="Acuario3">
+      <img src="#" alt="Acuario4">
+    </div>
+
+    <div>
+      <h3>
+        Rosales
+      </h3>
+      <img src="#" alt="Rosal1">
+      <img src="#" alt="Rosal2">
+      <img src="#" alt="Rosal3">
+      <img src="#" alt="Rosal4">
+    </div>
+
+    <div>
+      <h3>
+        Invernales
+      </h3>
+      <img src="#" alt="Árbol invernal1">
+      <img src="#" alt="Árbol invernal2">
+      <img src="#" alt="Árbol invernal3">
+      <img src="#" alt="Árbol invernal4">
+    </div>
+
+    <div>
+      <h3>
+        Macetas
+      </h3>
+      <img src="#" alt="Maceta1">
+      <img src="#" alt="Maceta2">
+      <img src="#" alt="Maceta3">
+      <img src="#" alt="Maceta4">
+    </div>
+
+    <div>
+      <h3>
+        Bonsais
+      </h3>
+      <img src="#" alt="Bonsai1">
+      <img src="#" alt="Bonsai2">
+      <img src="#" alt="Bonsai3">
+      <img src="#" alt="Bonsai4">
+    </div>
+
+    <div>
+      <h3>
+        Semillas
+      </h3>
+      <img src="#" alt="Maceta1">
+      <img src="#" alt="Maceta2">
+      <img src="#" alt="Maceta3">
+      <img src="#" alt="Maceta4">
+    </div>
+  </section>
+
+  <!-- QUE NOS HACE DIFERENTES -->
+
+  <section>
+    <div>
+      <h2>
+        ¿Qué nos hace diferentes?
+      </h2>
+
+      <div>
+        <h3>
+          Diferentes1
+        </h3>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia maxime tenetur neque illo, omnis laudantium,
+          dolor dicta illum nesciunt reprehenderit error. Sapiente, labore odit! Voluptate rem animi accusamus nam
+          ducimus?
+        </p>
+
+        <img src="#" alt="Diferentes1">
+      </div>
+
+      <div>
+        <h3>
+          Diferentes2
+        </h3>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia maxime tenetur neque illo, omnis laudantium,
+          dolor dicta illum nesciunt reprehenderit error. Sapiente, labore odit! Voluptate rem animi accusamus nam
+          ducimus?
+        </p>
+
+        <img src="#" alt="Diferentes2">
+      </div>
+
+      <div>
+        <h3>
+          Diferentes3
+        </h3>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia maxime tenetur neque illo, omnis laudantium,
+          dolor dicta illum nesciunt reprehenderit error. Sapiente, labore odit! Voluptate rem animi accusamus nam
+          ducimus?
+        </p>
+
+        <img src="#" alt="Diferentes3">
+      </div>
+
+      <div>
+        <h3>
+          Diferentes4
+        </h3>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia maxime tenetur neque illo, omnis laudantium,
+          dolor dicta illum nesciunt reprehenderit error. Sapiente, labore odit! Voluptate rem animi accusamus nam
+          ducimus?
+        </p>
+
+        <img src="#" alt="Diferentes4">
+      </div>
+    </div>
+  </section>
+
+
+  <!-- REDES SOCIALES -->
+
+  <section>
+    <div>
+      <div>
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="32"
+          height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#009988" fill="none" stroke-linecap="round"
+          stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+        </svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-youtube" width="32"
+          height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#009988" fill="none" stroke-linecap="round"
+          stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <rect x="3" y="5" width="18" height="14" rx="4" />
+          <path d="M10 9l5 3l-5 3z" />
+        </svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="32"
+          height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#009988" fill="none" stroke-linecap="round"
+          stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <rect x="4" y="4" width="16" height="16" rx="4" />
+          <circle cx="12" cy="12" r="3" />
+          <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+        </svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="32"
+          height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#009988" fill="none" stroke-linecap="round"
+          stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path
+            d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+        </svg>
+      </div>
+
+      <div>
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-credit-card" width="32" height="32"
+          viewBox="0 0 24 24" stroke-width="1.5" stroke="#009988" fill="none" stroke-linecap="round"
+          stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <rect x="3" y="5" width="18" height="14" rx="3" />
+          <line x1="3" y1="10" x2="21" y2="10" />
+          <line x1="7" y1="15" x2="7.01" y2="15" />
+          <line x1="11" y1="15" x2="13" y2="15" />
+        </svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-paypal" width="32" height="32"
+          viewBox="0 0 24 24" stroke-width="1.5" stroke="#009988" fill="none" stroke-linecap="round"
+          stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path
+            d="M10 13l2.5 0c2.5 0 5 -2.5 5 -5c0 -3 -1.9 -5 -5 -5h-5.5c-.5 0 -1 .5 -1 1l-2 14c0 .5 .5 1 1 1h2.8l1.2 -5c.1 -.6 .4 -1 1 -1zm7.5 -5.8c1.7 1 2.5 2.8 2.5 4.8c0 2.5 -2.5 4.5 -5 4.5h-2.6l-.6 3.6a1 1 0 0 1 -1 .8l-2.7 0a0.5 .5 0 0 1 -.5 -.6l.2 -1.4" />
+        </svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-businessplan" width="32" height="32"
+          viewBox="0 0 24 24" stroke-width="1.5" stroke="#009988" fill="none" stroke-linecap="round"
+          stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <ellipse cx="16" cy="6" rx="5" ry="3" />
+          <path d="M11 6v4c0 1.657 2.239 3 5 3s5 -1.343 5 -3v-4" />
+          <path d="M11 10v4c0 1.657 2.239 3 5 3s5 -1.343 5 -3v-4" />
+          <path d="M11 14v4c0 1.657 2.239 3 5 3s5 -1.343 5 -3v-4" />
+          <path d="M7 9h-2.5a1.5 1.5 0 0 0 0 3h1a1.5 1.5 0 0 1 0 3h-2.5" />
+          <path d="M5 15v1m0 -8v1" />
+        </svg>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- ATENCIÓN AL CLIENTE Y LEGAL -->
+
+  <section>
+    <div>
+      <h3>
+        Atención al cliente
+      </h3>
+      <div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-info-circle" width="32"
+            height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#009988" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <circle cx="12" cy="12" r="9" />
+            <line x1="12" y1="8" x2="12.01" y2="8" />
+            <polyline points="11 12 12 12 12 16 13 16" />
+          </svg>
+
+          <p>
+            Ayuda
+          </p>
+        </div>
+
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-question-mark" width="32"
+            height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#009988" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M8 8a3.5 3 0 0 1 3.5 -3h1a3.5 3 0 0 1 3.5 3a3 3 0 0 1 -2 3a3 4 0 0 0 -2 4" />
+            <line x1="12" y1="19" x2="12" y2="19.01" />
+          </svg>
+
+          <p>
+            FAQ
+          </p>
+        </div>
+
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone" width="32" height="32"
+            viewBox="0 0 24 24" stroke-width="1.5" stroke="#009988" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+          </svg>
+
+          <p>
+            Contáctanos
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <h3>
+        Legal
+      </h3>
+      <div>
+        <ul>
+          <li>Política de privacidad</li>
+          <li>Política de cookies</li>
+          <li>Condiciones de uso</li>
+          <li>Condiciones generales</li>
+          <li>Aviso legal</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
 </body>
+
 </html>

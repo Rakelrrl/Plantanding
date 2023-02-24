@@ -1,5 +1,6 @@
 :root {
   --oliva: #A0E34A;
+
 }
 
 html {
@@ -10,3 +11,30 @@ body {
   font-size: 16px;
 }
 
+.contenedor {
+  width: 95%;
+  margin: 0 20px 0 20px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo {
+  width: 170px;
+  height: 100px;
+}
+
+.iconos{
+  display: flex;
+  flex-direction: row;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
