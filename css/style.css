@@ -28,7 +28,7 @@ a {
 
 .encabezado {
   background-color: white;
-  background-color: var(--oliva);
+/*   background-color: var(--oliva); */
   margin: 0px;
 }
 
@@ -46,7 +46,7 @@ a {
 .logo {
   width: 100%;
   height: 100%;
-  background-color: var(--iconos);
+/*   background-color: var(--iconos); */
 }
 
 .logonav{
@@ -176,7 +176,7 @@ a {
 /*      SECCIÓN PARA CATEGORÍAS DESTACADAS */
 
 .secciondestacadas{
-  background-color:gold;
+/*   background-color:gold; */
 }
 
 .secciondestacadas2{
