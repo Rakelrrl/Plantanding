@@ -23,7 +23,7 @@ a {
 }
 
 .contenedor {
-  width: 95%;
+  width: 90%;
   margin: 0 auto 0 auto;
 }
 
@@ -116,14 +116,14 @@ a {
   justify-content: space-evenly;
 }
 
-/*      MEMÚ       */
+/*      MENÚ       */
 
 .menu {
   font-size: 13px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-/*   background-color: rgba(160, 227, 74, 0.4); */
+  /* background-color: rgba(160, 227, 74, 0.4); */
 }
 
 /*      FONDO PARA SACAR EL BOTÓN */
@@ -246,6 +246,34 @@ a {
   justify-content: space-between;
 }
 
+
+
+/* ACCESOS */
+
+.colorFondo {
+  background-color: var(--olivamenu);
+  padding: 50px 0px 10px 0px;
+}
+
+.colorTitulos {
+  color: var(--iconos);
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.margenPlantas {
+  margin-bottom: 50px;
+}
+
+.imagenes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.imagenes img {
+  max-width: 90%;
+  border-radius: 20px;
+}
 
 
 
