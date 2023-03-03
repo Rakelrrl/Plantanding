@@ -291,13 +291,16 @@ a {
 
 
 .legal {
-  background-color: blue;
   margin-right: 40%;
+  margin-bottom: 100px;
 }
 
 .legal div h3 {
   justify-content: center;
+  text-align: center;
+  margin-right: 30px;
 }
+
 
 .legal-tabla {
   display: grid;
@@ -305,6 +308,8 @@ a {
   max-width: 100px;
   gap: 30px 60px;
   margin-top: 25px;
+  margin-right: 0px;
+  text-align: center;
 }
 
 
@@ -379,8 +384,8 @@ a {
 
 .redes {
   display: flex;
-  flex: 30%;
-  width: 30%;
+  flex: 35%;
+  width: 35%;
   justify-content: space-evenly;
   padding: 10px;
   margin-right: 14%;
