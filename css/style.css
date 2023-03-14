@@ -262,12 +262,30 @@ body {
   display: grid;
   grid-template-columns: 0.7fr 1fr;
   grid-template-rows: 1fr;
+  gap: 5%;
   /* padding: 200px 50px; */
   background-color: aqua;
 }
 
-.cuadradoBlanco {
+.bannerapp h2 {
+  font-size: 60px;
+  margin: 0px;
+}
+
+.bannerapp p {
+font-size: 27px;
+font-weight: 800;
+line-height: 1.4;
+margin: 0px;
+}
+
+.textoApp {
   padding: 50px 50px 75px 50px;
+  text-align: justify;
+}
+
+.textoApp p {
+  color: white;
 }
 
 .imgApp {
@@ -302,6 +320,46 @@ body {
   flex-direction: row;
   justify-content: space-between;
 }
+
+.categorias {
+  background-color: blue;
+  display: grid;
+  grid: 300px / 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5%;
+}
+
+.categorias div a {
+  color: white;
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.categoria1 {
+  background-image: url(https://res.cloudinary.com/fronda/image/upload/f_auto,q_auto,c_fill,dpr_2.0,g_center,w_300,h_400/productos/fol/10002/10002430_1.jpg?17-01-2023);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  width: 100%;
+  height: 100%;
+}
+
+
+/* .categorias div img {
+  max-width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  transition: 0.5s;
+  margin-bottom: 7px;
+}
+
+.categorias div img:hover {
+  transform: scale(125%);
+} */
 
 
 /* ACCESOS */
