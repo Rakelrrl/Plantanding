@@ -324,42 +324,66 @@ margin: 0px;
 .categorias {
   background-color: blue;
   display: grid;
-  grid: 300px / 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  gap: 10px;
+  grid: 300px / 1fr 1fr 1fr 1fr 1fr;
+  gap: 20px;
   width: 90%;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   margin-left: 5%;
 }
 
-.categorias div a {
-  color: white;
+/* .categorias div a {
+  color: black;
   justify-content: center;
   text-align: center;
+  align-self: center;
   text-transform: uppercase;
-}
+} */
 
-.categoria1 {
-  background-image: url(https://res.cloudinary.com/fronda/image/upload/f_auto,q_auto,c_fill,dpr_2.0,g_center,w_300,h_400/productos/fol/10002/10002430_1.jpg?17-01-2023);
+.imgCategoria {
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: right;
+  background-position: center;
   width: 100%;
   height: 100%;
 }
 
-
-/* .categorias div img {
-  max-width: 100%;
-  height: 100%;
-  border-radius: 8px;
-  transition: 0.5s;
-  margin-bottom: 7px;
+.imgCategoria a {
+  color: black;
+  text-align: center;
+  justify-self: center;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+  text-transform: uppercase;
 }
 
-.categorias div img:hover {
-  transform: scale(125%);
-} */
+
+.categoria1 {
+  background-image: url(https://res.cloudinary.com/fronda/image/upload/f_auto,q_auto,c_fill,dpr_2.0,g_center,w_300,h_400/productos/fol/10002/10002430_1.jpg?17-01-2023);
+}
+
+.categoria2 {
+  background-image: url(https://res.cloudinary.com/fronda/image/upload/f_auto,q_auto,c_fill,dpr_2.0,g_center,w_300,h_400/productos/fol/10025/10025362_1.jpg?18-01-2023);
+}
+
+.categoria3{
+  background-image: url();
+}
+
+.categoria4{
+  background-image: url();
+}
+
+.categoria5{
+  background-image: url();
+}
+
+
+
+
+
 
 
 /* ACCESOS */
