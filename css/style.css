@@ -3,6 +3,7 @@
   --olivamenu: rgba(160, 227, 74, 0.4);
   --olivadeg: rgba(160, 227, 74, 0.6);
   --iconos: #009988;
+  --verdevideo: rgb(126, 217, 87);
 }
 
 html {
@@ -299,26 +300,46 @@ body {
 
 /*  BANNER PRIMAVERA */
 
+.contenedorPrimavera{
+  width: 100%;
+  margin: 0 auto 0 auto;
+}
+
 .bannerprimaveral {
   color: white;
-  background-image: url(../img/Fondo-madera-planta.jpg);
-  background-size: cover;
+/*   background-color: var(--verdevideo); */
+/*   z-index: -1; */
+  /*   background-image: url(../img/Fondo-madera-planta.jpg);*/
   flex: 100%;
   max-width: 100%;
-  padding: 65px 50px 105px 50px;
-/*   padding: 50px 50px 75px 50px;*/
+  padding: 40px 50px 105px 50px;
+  /*   padding: 50px 50px 75px 50px;*/
+}
+
+.sect {
+  position: relative;
+  overflow: hidden;
+}
+
+.videoBanner {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+  /* height: 100%; */
 }
 
 .border {
-  padding: 0px 0px 0px 0px;
+  padding: 0px;
   border-top: 2px solid white;
   border-bottom: 2px solid white;
-  width: 40%;
-  margin-left: 5%;
+  width: 29%;
+  margin-left: 0%;
 }
 
 .colorBlur {
-/*   background: linear-gradient( red, yellow) ; */
+  /*   background: linear-gradient( red, yellow) ; */
   background: -moz-linear-gradient(left, rgba(210, 255, 82, 1) 0%, rgba(145, 232, 66, 0.64) 100%);
   background: -webkit-gradient(left top, right top, color-stop(0%, rgba(210, 255, 82, 1)), color-stop(100%, rgba(145, 232, 66, 0.64)));
   background: -webkit-linear-gradient(left, rgba(210, 255, 82, 1) 0%, rgba(145, 232, 66, 0.64) 100%);
@@ -327,16 +348,17 @@ body {
   background: linear-gradient(to right, rgba(210, 255, 82, 1) 0%, rgba(145, 232, 66, 0.64) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d2ff52', endColorstr='#91e842', GradientType=1);
   -webkit-background-clip: text;
-  color: transparent;  
+  color: transparent;
+  -webkit-text-stroke: 1px black;
 }
 
 .bannerprimaveral h2 {
-  font-size: 85px;
-  padding: 15px 0 10px 50px;
+  font-size: 66px;
+  padding: 5px 0 10px 50px;
 }
 
 .bannerprimaveral h3 {
-  font-size: 35px;
+  font-size: 30px;
   padding-top: 35px;
   padding-bottom: 35px;
 }
@@ -344,7 +366,7 @@ body {
 .bannerprimaveral p {
   font-size: 27px;
   font-weight: 800;
-  text-transform: uppercase;
+/*   text-transform: uppercase; */
   line-height: 1.4;
   padding-bottom: 20px;
 }
@@ -365,10 +387,15 @@ body {
    background-color:gold;
 } */
 
-.secciondestacadas2 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+.tituloSeccionDestacadas {
+  /* margin-top: 0px; */
+  padding: 30px 0px;
+}
+
+.tituloSeccionDestacadas h2 {
+  color: var(--iconos);
+  font-size: 50px;
+  text-align: center;
 }
 
 .categorias {
@@ -380,20 +407,37 @@ body {
   margin-left: 5%;
 }
 
+.hoverLinks a{
+  transition: height, ease, 0.5s;
+  /* transition-property: height;
+  transition-timing-function: ease;
+  transition-duration: 0.5s; */
+  border-radius: 8px;
+  height: 375px;
+  width: 100%;
+  text-decoration: none;
+}
+
+.hoverLinks a:hover {
+  height: 375px;
+  /* background-image: linear-gradient(180deg, rgba(0, 65, 68, 0), rgba(0, 0, 0, 0.7)); */
+  background-image: linear-gradient(180deg, rgba(160, 227, 74, 0), rgba(160, 227, 74, 0.8));
+}
+
 .imgCategoria {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  display: grid;
+  grid: 1fr / 1fr 0fr;
   width: 100%;
   height: 100%;
   border-radius: 8px;
-  display: flex;
   align-items: center;
 }
 
-.imgCategoria a {
-  display: grid;
-  grid: 100%;
+.imgCategoria span {
+  display: flex;
   width: 100%;
   height: 75px;
   color: white;
@@ -401,11 +445,17 @@ body {
   text-align: center;
   align-items: center;
   text-transform: uppercase;
+  text-decoration: none;
   font-size: 24px;
   font-weight: 700;
   line-height: 1.5;
   backdrop-filter: blur(5px);
 }
+
+/* .imgCategoria a:hover {
+  height: 375px;
+  background-image: linear-gradient(180deg, rgba(160, 227, 74, 0), rgba(160, 227, 74, 0.8));
+} */
 
 .categoria1 {
   background-image: url(https://res.cloudinary.com/fronda/image/upload/f_auto,q_auto,c_fill,dpr_2.0,g_center,w_300,h_400/productos/fol/10028/10028159_2.jpg?18-01-2023);
@@ -441,8 +491,9 @@ body {
 .accesosTitulo {
   color: var(--iconos);
   text-transform: capitalize;
-  font-size: 22px;
+  font-size: 30px;
   margin-bottom: 50px;
+  margin-left: 10%;
 }
 
 
