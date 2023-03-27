@@ -407,7 +407,10 @@ body {
   margin-left: 5%;
 }
 
-.hoverLinks a{
+.hoverLinks {
+  text-decoration: none;
+  height: 375px;
+
   transition: height, ease, 0.5s;
   /* transition-property: height;
   transition-timing-function: ease;
@@ -416,18 +419,19 @@ body {
   height: 375px;
   width: 100%;
   text-decoration: none;
+  backdrop-filter: blur(5px);
 }
 
-.hoverLinks a:hover {
+.hoverLinks:hover{
   height: 375px;
   /* background-image: linear-gradient(180deg, rgba(0, 65, 68, 0), rgba(0, 0, 0, 0.7)); */
   background-image: linear-gradient(180deg, rgba(160, 227, 74, 0), rgba(160, 227, 74, 0.8));
 }
 
 .imgCategoria {
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: center; */
   display: grid;
   grid: 1fr / 1fr 0fr;
   width: 100%;
@@ -450,7 +454,14 @@ body {
   font-weight: 700;
   line-height: 1.5;
   backdrop-filter: blur(5px);
+
 }
+
+/* .imgCategoria span:hover{ */
+  /* height: 375px; */
+  /* background-image: linear-gradient(180deg, rgba(0, 65, 68, 0), rgba(0, 0, 0, 0.7)); */
+  /* background-image: linear-gradient(180deg, rgba(160, 227, 74, 0), rgba(160, 227, 74, 0.8));
+} */
 
 /* .imgCategoria a:hover {
   height: 375px;
@@ -459,6 +470,9 @@ body {
 
 .categoria1 {
   background-image: url(https://res.cloudinary.com/fronda/image/upload/f_auto,q_auto,c_fill,dpr_2.0,g_center,w_300,h_400/productos/fol/10028/10028159_2.jpg?18-01-2023);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .categoria2 {
