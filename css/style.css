@@ -300,15 +300,15 @@ body {
 
 /*  BANNER PRIMAVERA */
 
-.contenedorPrimavera{
+.contenedorPrimavera {
   width: 100%;
   margin: 0 auto 0 auto;
 }
 
 .bannerprimaveral {
   color: white;
-/*   background-color: var(--verdevideo); */
-/*   z-index: -1; */
+  /*   background-color: var(--verdevideo); */
+  /*   z-index: -1; */
   /*   background-image: url(../img/Fondo-madera-planta.jpg);*/
   flex: 100%;
   max-width: 100%;
@@ -366,7 +366,7 @@ body {
 .bannerprimaveral p {
   font-size: 27px;
   font-weight: 800;
-/*   text-transform: uppercase; */
+  /*   text-transform: uppercase; */
   line-height: 1.4;
   padding-bottom: 20px;
 }
@@ -381,6 +381,40 @@ body {
   text-decoration: none;
 }
 
+/*      SECCIÓN PARA COSITOS DEL MEDIO  */
+
+.sectioncositas {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+
+.sectioncositas div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 23%;
+}
+
+.sectioncositas p {
+  font-size: 18px;
+  display: inline;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.sectioncositas img {
+  width: 30px;
+  height: 30px;
+  padding-right: 20px;
+}
+
+.border {
+  padding: 5px 0px 5px 15px;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+}
+
 /*      SECCIÓN PARA CATEGORÍAS DESTACADAS */
 
 /* .secciondestacadas {
@@ -389,12 +423,12 @@ body {
 
 .tituloSeccionDestacadas {
   /* margin-top: 0px; */
-  padding: 30px 0px;
+  padding: 40px 0px 40px 0px;
 }
 
 .tituloSeccionDestacadas h2 {
   color: var(--iconos);
-  font-size: 50px;
+  font-size: 40px;
   text-align: center;
 }
 
@@ -407,43 +441,29 @@ body {
   margin-left: 5%;
 }
 
-.hoverLinks {
+.deco {
   text-decoration: none;
-  height: 375px;
-
-  transition: height, ease, 0.5s;
-  /* transition-property: height;
-  transition-timing-function: ease;
-  transition-duration: 0.5s; */
-  border-radius: 8px;
-  height: 375px;
+  display: flex;
+  height: 100%;
   width: 100%;
-  text-decoration: none;
-  backdrop-filter: blur(5px);
-}
-
-.hoverLinks:hover{
-  height: 375px;
-  /* background-image: linear-gradient(180deg, rgba(0, 65, 68, 0), rgba(0, 0, 0, 0.7)); */
-  background-image: linear-gradient(180deg, rgba(160, 227, 74, 0), rgba(160, 227, 74, 0.8));
 }
 
 .imgCategoria {
-  /* background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center; */
-  display: grid;
-  grid: 1fr / 1fr 0fr;
+  display: flex;
   width: 100%;
   height: 100%;
-  border-radius: 8px;
+  justify-content: center;
   align-items: center;
+  border-radius: 8px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .imgCategoria span {
   display: flex;
   width: 100%;
-  height: 75px;
+  height: 20%;
   color: white;
   justify-content: center;
   text-align: center;
@@ -453,26 +473,18 @@ body {
   font-size: 24px;
   font-weight: 700;
   line-height: 1.5;
-  backdrop-filter: blur(5px);
-
+  text-decoration: none;
+  transition: height, ease, 0.5s;
+  backdrop-filter: blur(2px);
 }
 
-/* .imgCategoria span:hover{ */
-  /* height: 375px; */
-  /* background-image: linear-gradient(180deg, rgba(0, 65, 68, 0), rgba(0, 0, 0, 0.7)); */
-  /* background-image: linear-gradient(180deg, rgba(160, 227, 74, 0), rgba(160, 227, 74, 0.8));
-} */
-
-/* .imgCategoria a:hover {
-  height: 375px;
+.imgCategoria span:hover {
+  height: 100%;
   background-image: linear-gradient(180deg, rgba(160, 227, 74, 0), rgba(160, 227, 74, 0.8));
-} */
+}
 
 .categoria1 {
   background-image: url(https://res.cloudinary.com/fronda/image/upload/f_auto,q_auto,c_fill,dpr_2.0,g_center,w_300,h_400/productos/fol/10028/10028159_2.jpg?18-01-2023);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
 .categoria2 {
@@ -505,11 +517,10 @@ body {
 .accesosTitulo {
   color: var(--iconos);
   text-transform: capitalize;
-  font-size: 30px;
+  font-size: 28px;
   margin-bottom: 50px;
   margin-left: 10%;
 }
-
 
 .imagenes {
   display: grid;
