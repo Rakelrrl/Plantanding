@@ -15,6 +15,16 @@ body {
   margin: 0px;
 }
 
+body::-webkit-scrollbar {
+  width: 17px;  
+}
+
+body::-webkit-scrollbar-thumb {
+  background-image: url(../img/icono_planta_feliz.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 .contenedor {
   width: 90%;
   margin: 0 auto 0 auto;
@@ -176,6 +186,7 @@ body {
 .zoom {
   transition: 0.2s;
   border: 2px var(--olivamenu);
+  text-decoration: none;
 }
 
 .zoom:hover {
@@ -196,6 +207,232 @@ body {
   /*   text-decoration: underline -1px; */
 }
 
+.zoom a{
+  text-decoration: none;
+  color: black;
+}
+
+.desplegable {
+  display: inline-block;
+  position: relative;
+}
+
+.contenidoDesplegable {
+  display: none;
+  position: absolute;
+  width: 400%;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  border-radius: 5px;
+  margin-left: -10px;
+  margin-top: 5px;
+  padding-bottom: 10px;
+}
+
+.desplegable:hover .contenidoDesplegable {
+  display: grid;
+}
+
+.contenidoDesplegable {
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.contenidoDesplegable div h2 {
+  padding: 10px;
+  text-align: center;
+  text-decoration: underline;
+  line-height: 20px;
+}
+
+.subDesplegable {
+  display: grid;
+  grid-template-columns: 1fr 1fr
+}
+
+.bordeDesplegable {
+  border-right: 10px;
+  border-color: #009988;
+  border-width: 5px;
+}
+
+.contenidoDesplegable div a {
+  display: block;
+  text-align: center;
+  font-size: 15px;
+  padding: 10px;
+}
+
+.contenidoDesplegable div a:hover {
+  text-decoration: underline;
+}
+
+/*       CAROUSEL prueba2 */
+
+/* .carousel{
+  padding: 0px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider{
+  width: 800px;
+  height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.slides{
+  width: 500%;
+  height: 500px;
+  display: flex;
+}
+
+.slides input{
+  display:none;
+}
+
+.slide{
+  width: 800px;
+  height: 500px;
+}
+
+.navigation-manual{
+  position: absolute;
+  width: 800px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+.navigation-btn{
+  border: 2px solid #009988;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+  margin-right: 40px;
+}
+
+.manual-btn:hover{
+  background: #009988;
+}
+
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+  margin-left: -30%;
+}
+
+#radio3:checked ~ .first{
+  margin-left: -60%;
+}
+
+.navigation-auto{
+ position:absolute;
+ display: flex;
+ width: 800px;
+ justify-content: center;
+ margin-top: 460px 
+}
+
+.navigation-auto div{
+  border: 2px solid;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+  margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto.auto-btn1{
+  background: #009988;
+}
+
+#radio2:checked ~ .navigation-auto.auto-btn1{
+  background: #009988;
+}
+
+#radio3:checked ~ .navigation-auto.auto-btn1{
+  background: #009988;
+} */
+
+
+/*        CAROUSEL prueba1    */
+
+/* html, body {
+  margin: 0;
+  padding: 0;
+} */
+
+/* .pic-ctn {
+  width: 100vw;
+  height: 200px;
+}
+
+@keyframes display {
+  0% {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+  10% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  20% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  30% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+}
+
+.pic-ctn {
+  position: relative;
+  width: 100vw;
+  height: 300px;
+  margin-top: 15vh;
+}
+
+.pic-ctn > img {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 100px);
+  opacity: 0;
+  animation: display 10s infinite;
+}
+
+img:nth-child(2) {
+  animation-delay: 2s;
+}
+img:nth-child(3) {
+  animation-delay: 4s;
+}
+img:nth-child(4) {
+  animation-delay: 6s;
+}
+img:nth-child(5) {
+  animation-delay: 8s;
+} */
+
+
+
 /*      SECCIÓN OFERTAS/APP/NOVEDADES     */
 
 .seccionofertas2 {
@@ -204,9 +441,6 @@ body {
   justify-content: space-between;
 }
 
-.seccionofertas2 h2 {
-  text-transform: uppercase;
-}
 
 /*    BANNER OFERTAS   */
 
@@ -217,28 +451,30 @@ body {
   flex: 100%;
   max-width: 100%;
   padding: 50px 50px 75px 50px;
+  text-shadow: black 0.1em 0.1em 0.1em
 }
 
 .bannerofertas h2 {
-  font-size: 85px;
-  padding-bottom: 20px;
+  font-size: 80px;
+  text-transform: uppercase;
+  padding-bottom: 22px;
 }
 
 .bannerofertas h3 {
-  font-size: 35px;
-  padding-bottom: 20px;
+  font-size: 36px;
+  padding-bottom: 30px;
 }
 
 .bannerofertas p {
-  font-size: 27px;
+  font-size: 28px;
   font-weight: 800;
   text-transform: uppercase;
   line-height: 1.4;
-  padding-bottom: 20px;
+  padding-bottom: 27px;
 }
 
 .bannerofertas h4 {
-  font-size: 27px;
+  font-size: 30px;
   margin-top: 15px;
 }
 
@@ -256,20 +492,30 @@ body {
 
 /*  BANNER APP */
 
-.bannerapp {
-  /* background-image: url(../img/banner_app.jpg);
+/* .bannerapp {
+  background-image: url(../img/banner_app.jpg);
   background-size: cover;
-  background-repeat: no-repeat; */
+  background-repeat: no-repeat;
   display: grid;
   grid-template-columns: 0.7fr 1fr;
   grid-template-rows: 1fr;
   gap: 5%;
-  /* padding: 200px 50px; */
+  padding: 200px 50px;
   background-color: aqua;
+} */
+.bannerapp{
+  color: white;
+  background-image: url(../img/Appp\ móvil\ sin\ tiendas.png);
+  background-size: cover;
+  flex: 100%;
+  max-width: 100%;
+  padding: 50px 50px 130px 50px;
+  text-shadow: black 0.1em 0.1em 0.1em;
 }
 
 .bannerapp h2 {
   font-size: 60px;
+  text-transform: uppercase;
   margin: 0px;
 }
 
@@ -289,13 +535,6 @@ body {
   color: white;
 }
 
-.imgApp {
-  background-image: url(../img/banner_app.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-}
 
 
 /*  BANNER PRIMAVERA */
@@ -327,14 +566,18 @@ body {
   top: 0;
   width: 100%;
   z-index: -1;
-  /* height: 100%; */
+/*   height: 100%; */
+}
+
+.contenidoPrimavera {
+  width: 50%;
 }
 
 .border {
   padding: 0px;
-  border-top: 2px solid white;
-  border-bottom: 2px solid white;
-  width: 29%;
+  border-top: 3px solid rgb(44, 100, 39);
+  border-bottom: 3px solid  rgb(44, 100, 39);
+  width: 72%;
   margin-left: 0%;
 }
 
@@ -353,26 +596,25 @@ body {
 }
 
 .bannerprimaveral h2 {
-  font-size: 66px;
+  font-size: 72px;
   padding: 5px 0 10px 50px;
 }
 
 .bannerprimaveral h3 {
-  font-size: 30px;
+  font-size: 34px;
   padding-top: 35px;
   padding-bottom: 35px;
 }
 
 .bannerprimaveral p {
-  font-size: 27px;
+  font-size: 31px;
   font-weight: 800;
-  /*   text-transform: uppercase; */
   line-height: 1.4;
   padding-bottom: 20px;
 }
 
 .bannerprimaveral h4 {
-  font-size: 27px;
+  font-size: 31px;
   margin-top: 15px;
 }
 
@@ -380,6 +622,11 @@ body {
   color: var(--white);
   text-decoration: none;
 }
+
+.bannerprimaveral h3, .bannerprimaveral p,.bannerprimaveral h4{
+  text-shadow: black 0.1em 0.1em 0.1em
+}
+
 
 /*      SECCIÓN PARA COSITOS DEL MEDIO  */
 
@@ -478,7 +725,7 @@ body {
   backdrop-filter: blur(2px);
 }
 
-.imgCategoria span:hover {
+.imgCategoria span:hover{
   height: 100%;
   background-image: linear-gradient(180deg, rgba(160, 227, 74, 0), rgba(160, 227, 74, 0.8));
 }

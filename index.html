@@ -12,6 +12,8 @@
 
   <link rel="preload" href="css/normalize.css" as="style">
   <link href="css/normalize.css" rel="stylesheet">
+
+  <link rel="icon" href="../img/icono_planta_feliz.png">
 </head>
 
 <body>
@@ -71,7 +73,7 @@
 
           <div class="iconos">
             <div>
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.google.com/maps" target="_blank" rel="noopener noreferrer">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="40"
                   height="40" viewBox="0 0 24 24" stroke-width="1" stroke="#009988" fill="none" stroke-linecap="round"
                   stroke-linejoin="round">
@@ -126,34 +128,90 @@
 
       <nav>
         <div class="menu">
-          <div class="zoom">
-            <h2 id="plantas">
-              PLANTAS
-            </h2>
+          <div class="zoom desplegable">
+            <a href="#">
+              <h2 id="plantas">
+                PLANTAS
+              </h2>
+            </a>
+            <div class="contenidoDesplegable">
+              <div class="bordeDesplegable">
+                <h2>Plantas de interior</h2>
+                <div class="subDesplegable">
+                  <div>
+                    <a href="#">Hoja verde</a>
+                    <a href="#">Orquídeas</a>
+                    <a href="#">Con flor</a>
+                    <a href="#">Cactus</a>
+                    <a href="#">Suculentas</a>
+                  </div>
+                  <div>
+                    <a href="#">Carnívoras</a>
+                    <a href="#">Colgantes</a>
+                    <a href="#">Acuarios</a>
+                    <a href="#">Aromáticas</a>
+                    <a href="#">Bambú</a>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <h2>Plantas de exterior</h2>
+                <div class="subDesplegable">
+                  <div>
+                    <a href="#">Arbustos</a>
+                    <a href="#">Aromáticas</a>
+                    <a href="#">Frutales</a>
+                    <a href="#">Trepadoras</a>
+                  </div>
+                  <div>
+                    <a href="#">Palmeras</a>
+                    <a href="#">Rosales</a>
+                    <a href="#">Árboles</a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
           <div class="zoom">
-            <h2 id="jardin">
-              JARDÍN
-            </h2>
+            <a href="#">
+              <h2 id="jardin">
+                JARDÍN
+              </h2>
+            </a>
           </div>
 
           <div class="zoom">
-            <h2 id="servicios">
-              SERVICIOS
-            </h2>
+            <a href="#">
+              <h2 id="servicios">
+                SERVICIOS
+              </h2>
+            </a>
           </div>
 
           <div class="zoom">
-            <h2 id="blog">
-              BLOG
-            </h2>
+            <a href="#">
+              <h2 id="blog">
+                BLOG
+              </h2>
+            </a>
           </div>
 
           <div class="zoom">
-            <h2 id="plantanding">
-              PLANTANDING
-            </h2>
+            <a href="#">
+              <h2 id="plantanding">
+                PLANTANDING
+              </h2>
+            </a>
+          </div>
+
+          <div class="zoom">
+            <a href="juego.html">
+              <h2 id="juego">
+                JUEGA
+              </h2>
+            </a>
           </div>
         </div>
       </nav>
@@ -161,6 +219,54 @@
   </header>
 
   <!--   <hr> -->
+
+  <!-- CAROUSEL prueba2 -->
+
+<!--   <section class="carousel">
+    <div class="slider">
+      <div class="slides">
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+
+
+        <div class="slide1">
+          <img src="img/icono_planta_feliz.png" alt="">
+        </div>
+
+        <div class="slide2">
+          <img src="img/icono_plantas-estanteria.png" alt="">
+        </div>
+
+        <div class="slide3">
+          <img src="img/icono_plantas_colgantes.png" alt="">
+        </div>
+
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+        </div>
+      </div>
+
+      <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+      </div>
+    </div>
+  </section>
+ -->
+
+
+ <!-- CAROUSEL prueba1 -->
+
+  <!--   <div class="pic-ctn">
+    <img src="img/banner_plantas.png" alt="" class="pic">
+    <img src="img/Appp móvil sin tiendas.png" alt="" class="pic">
+    <img src="img/banner_primavera.webp" class="pic">
+  </div> -->
+
 
   <!-- BANNNER / OFERTAS/APP/NOVEDADES --> <!-- Hacer un carrousel de texto???? -->
 
@@ -197,29 +303,30 @@
         </p>
       </div>
 
-      <div class="imgApp">
+
+      <div class="bannerprimaveral sect">
+        <video src="img/Diseño sin título.mp4" autoplay="true" muted="true" loop="true"
+          poster="img/Diseño sin título.mp4" class="videoBanner"></video>
+
+        <div class="contenidoPrimavera">
+          <h2 class="border colorBlur contenedorPrimavera">
+            Novedades
+          </h2>
+
+          <h3 class="contenedorPrimavera">
+            Colección Primavera 2023
+          </h3>
+
+          <p class="contenedorPrimavera">
+            <!--         Macetas, semillas, flores... -->
+            Para que tu jardín sea INIGUALABLE.
+          </p>
+
+          <h4 class="contenedorPrimavera">
+            Esta primavera ¡presume de jardín!
+          </h4>
+        </div>
       </div>
-    </div>
-
-    <div class="bannerprimaveral sect">
-      <video src="img/Diseño sin título.mp4" autoplay="true" muted="true" loop="true" poster="img/Diseño sin título.mp4"
-        class="videoBanner"></video>
-      <h2 class="border colorBlur contenedorPrimavera">
-        Novedades
-      </h2>
-
-      <h3 class="contenedorPrimavera">
-        Colección Primavera 2023
-      </h3>
-
-      <p class="contenedorPrimavera">
-        <!--         Macetas, semillas, flores... -->
-        Para que tu jardín sea INIGUALABLE.
-      </p>
-
-      <h4 class="contenedorPrimavera">
-        Esta primavera ¡presume de jardín!
-      </h4>
     </div>
   </section>
   <!-- 
@@ -256,7 +363,6 @@
     </div>
 
     <div class="categorias">
-
       <div>
         <a href="#" class="deco">
           <div class="imgCategoria categoria1">
@@ -275,7 +381,7 @@
             </span>
           </div>
         </a>
-        </div>
+      </div>
 
       <div>
         <a href="#" class="deco">
@@ -614,74 +720,56 @@
       <div class="diferentes">
         <div class="tituloDiferente">
           <h3>
-            Diferentes1
+            Cuidamos el planeta
           </h3>
 
           <div class="diferentesTexto">
             <img src="img/Calathea-fondo.jpg" alt="Diferentes1">
 
-            <h4>
-              Cuidamos el planeta
-            </h4>
-
             <p class="barras">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, cum pariatur aperiam a, odio non magni
+              Nuestra principal misión es cuidar del planeta, concienciando al mundo del valor que tienen
             </p>
           </div>
         </div>
 
         <div class="tituloDiferente">
           <h3>
-            Diferentes2
+            Somos eco-friendly
           </h3>
 
           <div class="diferentesTexto">
             <img src="img/Calathea-fondo.jpg" alt="Diferentes2">
 
-            <h4>
-              Somos eco-friendly
-            </h4>
-
             <p class="barras">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem architecto explicabo distinctio in
-              quidem
+              Productos 100% naturales de tal forma que no dañen al medio ambiente ni a las plantas
             </p>
           </div>
         </div>
 
         <div class="tituloDiferente">
           <h3>
-            Diferentes3
+            Mejor calidad
           </h3>
 
           <div class="diferentesTexto">
             <img src="img/Calathea-fondo.jpg" alt="Diferentes3">
 
-            <h4>
-              Mejor calidad
-            </h4>
-
             <p class="barras">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias porro eaque rerum quae! Aliquam
+              Mejores calidades para que las plantas estén siempre cuidadas y perfectas
             </p>
           </div>
         </div>
 
         <div class="tituloDiferente">
           <h3>
-            Diferentes4
+            Somos expertos
           </h3>
 
           <div class="diferentesTexto">
             <img src="img/Calathea-fondo.jpg" alt="Diferentes4">
 
-            <h4>
-              Somos expertos
-            </h4>
-
             <p class="barras">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius, quia aspernatur quis illum, in numquam
-
+              Más de 50 años nos avalan, no dudes en preguntarnos todas tus dudas
             </p>
           </div>
         </div>
