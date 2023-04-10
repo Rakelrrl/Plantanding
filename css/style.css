@@ -546,13 +546,9 @@ img:nth-child(5) {
 
 .bannerprimaveral {
   color: white;
-  /*   background-color: var(--verdevideo); */
-  /*   z-index: -1; */
-  /*   background-image: url(../img/Fondo-madera-planta.jpg);*/
   flex: 100%;
   max-width: 100%;
   padding: 40px 50px 105px 50px;
-  /*   padding: 50px 50px 75px 50px;*/
 }
 
 .sect {
@@ -566,11 +562,12 @@ img:nth-child(5) {
   top: 0;
   width: 100%;
   z-index: -1;
-/*   height: 100%; */
 }
 
 .contenidoPrimavera {
   width: 50%;
+  height: 100%;
+  backdrop-filter: blur(20px);
 }
 
 .border {
@@ -598,6 +595,8 @@ img:nth-child(5) {
 .bannerprimaveral h2 {
   font-size: 72px;
   padding: 5px 0 10px 50px;
+  height: auto;
+  backdrop-filter: blur(2px);
 }
 
 .bannerprimaveral h3 {
@@ -624,7 +623,7 @@ img:nth-child(5) {
 }
 
 .bannerprimaveral h3, .bannerprimaveral p,.bannerprimaveral h4{
-  text-shadow: black 0.1em 0.1em 0.1em
+  text-shadow: black 0.1em 0.1em 0.1em;
 }
 
 
