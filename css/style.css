@@ -1,24 +1,36 @@
+/* Variables */
 :root {
   --oliva: rgb(160, 227, 74);
   --olivamenu: rgba(160, 227, 74, 0.4);
   --olivadeg: rgba(160, 227, 74, 0.6);
   --iconos: #009988;
   --verdevideo: rgb(126, 217, 87);
+  --fondobeige: rgb(253, 246, 238);
+  --fondogrisclaro: rgb(247, 247, 247);
 }
 
 html {
   font-size: 62.5%;
 }
 
+/* Para añadir el tipo de letra que hemos descargado */
+@font-face{
+  font-family: Quicksand;
+  src: url(../Quicksand/static/Quicksand-Light.ttf);
+}
+
 body {
   font-size: 16px;
   margin: 0px;
+  font-family: Quicksand;
 }
 
+/* Para modificar la barra de scroll del lateral derecho */
 body::-webkit-scrollbar {
-  width: 17px;  
+  width: 17px;
 }
 
+/* Para modificar la barra de scroll del lateral derecho */
 body::-webkit-scrollbar-thumb {
   background-image: url(../img/icono_planta_feliz.png);
   background-size: contain;
@@ -41,9 +53,8 @@ body::-webkit-scrollbar-thumb {
 
 .nav {
   margin: 0px 15px 0px 15px;
-  /*   padding: 5px 0px 0px 0px; */
+  padding: 2px 0 3px 0;
   display: flex;
-  /*   flex-wrap: wrap; */
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -54,14 +65,6 @@ body::-webkit-scrollbar-thumb {
 .logo {
   width: 100%;
   height: 100%;
-  /*   background-color: rgba(210, 255, 82, 1);
-  background: -moz-linear-gradient(right, rgba(210, 255, 82, 1) 0%, rgba(145, 232, 66, 0.64) 100%);
-  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(210, 255, 82, 1)), color-stop(100%, rgba(145, 232, 66, 0.64)));
-  background: -webkit-linear-gradient(right, rgba(210, 255, 82, 1) 0%, rgba(145, 232, 66, 0.64) 100%);
-  background: -o-linear-gradient(right, rgba(210, 255, 82, 1) 0%, rgba(145, 232, 66, 0.64) 100%);
-  background: -ms-linear-gradient(right, rgba(210, 255, 82, 1) 0%, rgba(145, 232, 66, 0.64) 100%);
-  background: linear-gradient(to left, rgba(210, 255, 82, 1) 0%, rgba(145, 232, 66, 0.64) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d2ff52', endColorstr='#91e842', GradientType=1); */
   border-radius: 25px;
 }
 
@@ -119,14 +122,14 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  padding-left: 11px;
+  padding-left: 12px;
   margin-top: 4px;
 }
 
 /*      MENÚ       */
 
 .menu {
-  font-size: 10px;
+  font-size: 14px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -161,7 +164,7 @@ body::-webkit-scrollbar-thumb {
   background-color: var(--olivamenu);
 } */
 
-/*      Línea de abajo al poner ratón     */
+/*      Línea de abajo al poner el ratón     */
 
 #plantas:hover {
   text-decoration: underline 1px;
@@ -192,18 +195,17 @@ body::-webkit-scrollbar-thumb {
 .zoom:hover {
   box-shadow: 19px 23px 20px -10px rgba(0, 0, 0, 1);
   transform: scale(100%);
-  /*   background-color: white;
-  border-color: black; */
   border-radius: 10px;
   padding: 0 10px;
   background: rgba(210, 255, 82, 1);
+/*   background: rgba(210, 255, 82, 1);
   background: -moz-linear-gradient(left, rgba(210, 255, 82, 1) 0%, rgba(145, 232, 66, 0.64) 100%);
   background: -webkit-gradient(left top, right top, color-stop(0%, rgba(210, 255, 82, 1)), color-stop(100%, rgba(145, 232, 66, 0.64)));
   background: -webkit-linear-gradient(left, rgba(210, 255, 82, 1) 0%, rgba(145, 232, 66, 0.64) 100%);
   background: -o-linear-gradient(left, rgba(210, 255, 82, 1) 0%, rgba(145, 232, 66, 0.64) 100%);
   background: -ms-linear-gradient(left, rgba(210, 255, 82, 1) 0%, rgba(145, 232, 66, 0.64) 100%);
   background: linear-gradient(to right, rgba(210, 255, 82, 1) 0%, rgba(145, 232, 66, 0.64) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d2ff52', endColorstr='#91e842', GradientType=1);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d2ff52', endColorstr='#91e842', GradientType=1); */
   /*   text-decoration: underline -1px; */
 }
 
@@ -218,43 +220,29 @@ body::-webkit-scrollbar-thumb {
 }
 
 .contenidoDesplegable {
+/*   background-image: url(../img/Fondo-madera-planta.jpg);
+  background-size: cover; */
+  background-color: white;
   display: none;
   position: absolute;
-  width: 400%;
+  width: 500%;
   overflow: auto;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  background-color: white;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.4);
   border-radius: 5px;
   margin-left: -10px;
   margin-top: 5px;
   padding-bottom: 10px;
 }
 
-.desplegable:hover .contenidoDesplegable {
-  display: grid;
-}
-
-.contenidoDesplegable {
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-}
-
 .contenidoDesplegable div h2 {
-  padding: 10px;
+  padding: 20px 10px 15px 10px;
   text-align: center;
   text-decoration: underline;
   line-height: 20px;
 }
 
-.subDesplegable {
+.desplegable:hover .contenidoDesplegable {
   display: grid;
-  grid-template-columns: 1fr 1fr
-}
-
-.bordeDesplegable {
-  border-right: 10px;
-  border-color: #009988;
-  border-width: 5px;
 }
 
 .contenidoDesplegable div a {
@@ -268,178 +256,247 @@ body::-webkit-scrollbar-thumb {
   text-decoration: underline;
 }
 
-/*       CAROUSEL prueba2 */
+.contenidoDesplegable {
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
 
-/* .carousel{
-  padding: 0px;
+/* .bordeDesplegable {
+  border-right: 10px;
+  border-color: #009988;
+  border-width: 5px;
+} */
+
+.subDesplegablePlantas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.desplegable:hover .contenidoDesplegableServicios {
+  display: grid;
+}
+
+.contenidoDesplegableServicios{
+  grid-template-columns: 1fr;
+}
+
+
+/*  Fondos madera para menu */
+
+.fondoMadera{
+  display: none;
+  background-image: url(../img/fondo_madera_verde.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  /* height: 52rem; */
   height: 100vh;
+  width: 1059%;
+  margin-left: -10rem;
+  transition: 2s;
+  position: absolute;
+}
+
+/* .fondoMadera:target{
+  display: block;
+} */
+
+.desplegable:hover .fondoMadera {
+  display: block;
+}
+
+.menuHover {
+  display: grid;
+  grid-template-columns: 0.6fr 1fr 0.1fr;
+  grid-template-rows: 45rem;
+  width: 100%;
+  grid: 100%;
+}
+
+.menuHover img{
+  /* padding: 150px 100px 90px 170px; */
+  padding-top: 15%;
+  padding-left: 25%;
+  width: 300px;
+  height: 350px;
+}
+
+.menuHover div h2 {
+  padding: 50px 10px 15px 10px;
+  text-align: center;
+  text-decoration: underline;
+  line-height: 20px;
+}
+
+.menuHover div a {
+  display: block;
+  text-align: center;
+  font-size: 17px;
+  padding: 10px;
+}
+
+.textoHover {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  gap: 2%;
+  align-items: flex-start;
+}
+
+.division1{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* CAROUSEL */
+
+.carousel {
+  margin: 0;
+  padding: 0;
+  height: 550px;
   display: flex;
   justify-content: center;
   align-items: center;
+  /* background: #23E3C9; */
 }
 
-.slider{
-  width: 800px;
-  height: 500px;
-  border-radius: 10px;
+.slider {
+  width: 100%;
+  height: 550px;
+  /* border-radius: 10px; */
   overflow: hidden;
 }
 
-.slides{
-  width: 500%;
+.slides {
+  width: 335%;  /* Cambiar para img juntas */
   height: 500px;
   display: flex;
 }
 
-.slides input{
-  display:none;
+.slides input {
+  display: none;
 }
 
-.slide{
-  width: 800px;
+.slide {
+  width: 30%;
+  transition: 3s;
+}
+
+.slides div img {
+  width: 100%;
   height: 500px;
 }
 
-.navigation-manual{
+
+/* css para manual slide navigation */
+
+.navigation-manual {
   position: absolute;
-  width: 800px;
+  width: 100%;
   margin-top: -40px;
   display: flex;
   justify-content: center;
 }
 
-.navigation-btn{
-  border: 2px solid #009988;
+.manual-btn {
+  border: 2px solid black; /* #40D3DC */
   padding: 5px;
   border-radius: 10px;
   cursor: pointer;
   transition: 1s;
 }
 
+/* Aplica a todos menos al último hijo */
 .manual-btn:not(:last-child){
   margin-right: 40px;
 }
 
 .manual-btn:hover{
-  background: #009988;
+  background-color: black;
 }
 
-#radio1:checked ~ .first{
+#radio1:checked ~ .first {
   margin-left: 0;
 }
 
-#radio2:checked ~ .first{
+#radio2:checked ~ .first {
   margin-left: -30%;
 }
 
-#radio3:checked ~ .first{
+#radio3:checked ~ .first {
   margin-left: -60%;
 }
 
-.navigation-auto{
- position:absolute;
- display: flex;
- width: 800px;
- justify-content: center;
- margin-top: 460px 
+
+/* css para automatic carousel */
+
+.navigation-auto {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 460px;
 }
 
-.navigation-auto div{
-  border: 2px solid;
+.navigation-auto div {
+  border: 2px solid black;
   padding: 5px;
   border-radius: 10px;
   transition: 1s;
 }
 
-.navigation-auto div:not(:last-child){
+.navigation-auto div:not(:last-child) {
   margin-right: 40px;
 }
 
-#radio1:checked ~ .navigation-auto.auto-btn1{
-  background: #009988;
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+  background: black;
 }
 
-#radio2:checked ~ .navigation-auto.auto-btn1{
-  background: #009988;
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+  background: black;
 }
 
-#radio3:checked ~ .navigation-auto.auto-btn1{
-  background: #009988;
-} */
-
-
-/*        CAROUSEL prueba1    */
-
-/* html, body {
-  margin: 0;
-  padding: 0;
-} */
-
-/* .pic-ctn {
-  width: 100vw;
-  height: 200px;
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+  background: black;
 }
 
-@keyframes display {
-  0% {
-    transform: translateX(200px);
-    opacity: 0;
-  }
-  10% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-  20% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-  30% {
-    transform: translateX(-200px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(-200px);
-    opacity: 0;
-  }
-}
 
-.pic-ctn {
-  position: relative;
-  width: 100vw;
-  height: 300px;
-  margin-top: 15vh;
-}
 
-.pic-ctn > img {
-  position: absolute;
-  top: 0;
-  left: calc(50% - 100px);
-  opacity: 0;
-  animation: display 10s infinite;
-}
 
-img:nth-child(2) {
-  animation-delay: 2s;
-}
-img:nth-child(3) {
-  animation-delay: 4s;
-}
-img:nth-child(4) {
-  animation-delay: 6s;
-}
-img:nth-child(5) {
-  animation-delay: 8s;
-} */
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 /*      SECCIÓN OFERTAS/APP/NOVEDADES     */
 
-.seccionofertas2 {
+/* .seccionofertas2 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
+} */
 
 
 /*    BANNER OFERTAS   */
@@ -447,9 +504,10 @@ img:nth-child(5) {
 .bannerofertas {
   color: white;
   background-image: url(../img/banner_plantas.png);
-  background-size: cover;
+  /* background-size: cover; */
   flex: 100%;
   max-width: 100%;
+  height: 100vh;
   padding: 50px 50px 75px 50px;
   text-shadow: black 0.1em 0.1em 0.1em
 }
@@ -490,6 +548,23 @@ img:nth-child(5) {
   text-align: center;
 }
 
+.boton:hover {
+  box-shadow: 19px 23px 20px -10px rgba(0, 0, 0, 1);
+  transform: scale(100%);
+  padding: 0 10px;
+  background: rgba(210, 255, 82, 1);
+  background: -moz-linear-gradient(left, rgba(210, 255, 82, 1) 0%, rgba(145, 232, 66, 0.64) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(210, 255, 82, 1)), color-stop(100%, rgba(145, 232, 66, 0.64)));
+  background: -webkit-linear-gradient(left, rgba(210, 255, 82, 1) 0%, rgba(145, 232, 66, 0.64) 100%);
+  background: -o-linear-gradient(left, rgba(210, 255, 82, 1) 0%, rgba(145, 232, 66, 0.64) 100%);
+  background: -ms-linear-gradient(left, rgba(210, 255, 82, 1) 0%, rgba(145, 232, 66, 0.64) 100%);
+  background: linear-gradient(to right, rgba(210, 255, 82, 1) 0%, rgba(145, 232, 66, 0.64) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d2ff52', endColorstr='#91e842', GradientType=1);
+  text-decoration: underline -1px;
+  border: 2px solid white;
+  padding: 20px 80px;
+}
+
 /*  BANNER APP */
 
 /* .bannerapp {
@@ -503,12 +578,14 @@ img:nth-child(5) {
   padding: 200px 50px;
   background-color: aqua;
 } */
+
 .bannerapp{
   color: white;
   background-image: url(../img/Appp\ móvil\ sin\ tiendas.png);
   background-size: cover;
   flex: 100%;
   max-width: 100%;
+  height: 550px;
   padding: 50px 50px 130px 50px;
   text-shadow: black 0.1em 0.1em 0.1em;
 }
@@ -547,10 +624,11 @@ img:nth-child(5) {
 .bannerprimaveral {
   color: white;
   /*   background-color: var(--verdevideo); */
-  /*   z-index: -1; */
-  /*   background-image: url(../img/Fondo-madera-planta.jpg);*/
+  z-index: -1;
+  background-image: url(../img/fondo_madera_novedades.jpg);
   flex: 100%;
   max-width: 100%;
+  height: 100vh;
   padding: 40px 50px 105px 50px;
   /*   padding: 50px 50px 75px 50px;*/
 }
@@ -693,6 +771,8 @@ img:nth-child(5) {
   display: flex;
   height: 100%;
   width: 100%;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
 }
 
 .imgCategoria {
@@ -712,6 +792,7 @@ img:nth-child(5) {
   width: 100%;
   height: 20%;
   color: white;
+  text-shadow: 2px 2px 2px black;
   justify-content: center;
   text-align: center;
   align-items: center;
@@ -761,6 +842,10 @@ img:nth-child(5) {
   margin-top: 75px;
 }
 
+.accesos a{
+  text-decoration: none;
+}
+
 .accesosTitulo {
   color: var(--iconos);
   text-transform: capitalize;
@@ -782,9 +867,8 @@ img:nth-child(5) {
 }
 
 .imagenes div img {
-  max-width: 100%;
+  width: 100%;
   height: 340px;
-  width: 270px;
   border-radius: 8px;
   transition: 0.5s;
   margin-bottom: 0px;
@@ -813,15 +897,30 @@ img:nth-child(5) {
   letter-spacing: 1px;
 }
 
-/* .focus {
-  overflow: hidden;
-  border-radius: 8px;
+.precios {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr;
+  grid-template-rows: 1fr;
+  align-items: end;
 }
 
-.focus p {
-  text-align: center;
-} */
+.anadirFavoritos {
+  margin-left: 7.5%;
+}
 
+
+.anadirFavoritos:hover {
+  fill: #009988;
+}
+
+.anadirCarrito {
+  margin-left: 7.5%;
+}
+
+
+.anadirCarrito:hover {
+  fill: #009988;
+}
 
 
 /* QUE NOS HACE DIFERENTES */

@@ -7,6 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Plantanding</title>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Babylonica&display=swap" rel="stylesheet">
+  <!--   <link rel="preload" href="Quicksand/"> -->
+
   <link rel="preload" href="css/style.css" as="style">
   <link href="css/style.css" rel="stylesheet">
 
@@ -47,28 +52,6 @@
             </div>
           </div>
 
-          <!--      <div>
-        <form class="formbuscador">
-          <label>
-            <div class="absolute">
-              <input type="text" placeholder="Buscar en Plantanding" class="buscador">
-
-              <span class="lupa">
-                <span clas="lupa2" ::before>
-                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-leaf" width="50"
-                    height="50" viewBox="0 0 24 24" stroke-width="1" stroke="#009988" fill="none" stroke-linecap="round"
-                    stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path d="M5 21c.5 -4.5 2.5 -8 7 -10" />
-                    <path d="M9 18c6.218 0 10.5 -3.288 11 -12v-2h-4.014c-9 0 -11.986 4 -12 9c0 1 0 3 2 5h3z" />
-                  </svg>
-                </span>
-              </span>
-            </div>
-          </label>
-        </form>
-        </div> -->
-
           <!-- ICONOS ACCESOS -->
 
           <div class="iconos">
@@ -86,9 +69,9 @@
 
             <div>
               <a href="#" target="_blank" rel="noopener noreferrer">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-heart" width="40"
-                  height="40" viewBox="0 0 24 24" stroke-width="1" stroke="#009988" fill="none" stroke-linecap="round"
-                  stroke-linejoin="round">
+                <svg class="favoritos" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-heart"
+                  width="40" height="40" viewBox="0 0 24 24" stroke-width="1" stroke="#009988" fill="none"
+                  stroke-linecap="round" stroke-linejoin="round">
                   <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                   <path d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
                 </svg>
@@ -109,9 +92,9 @@
 
             <div>
               <a href="#" target="_blank" rel="noopener noreferrer">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-basket" width="40"
-                  height="40" viewBox="0 0 24 24" stroke-width="1" stroke="#009988" fill="none" stroke-linecap="round"
-                  stroke-linejoin="round">
+                <svg class="cesta" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-basket"
+                  width="40" height="40" viewBox="0 0 24 24" stroke-width="1" stroke="#009988" fill="none"
+                  stroke-linecap="round" stroke-linejoin="round">
                   <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                   <polyline points="7 10 12 4 17 10" />
                   <path d="M21 10l-2 8a2 2.5 0 0 1 -2 2h-10a2 2.5 0 0 1 -2 -2l-2 -8z" />
@@ -129,148 +112,374 @@
       <nav>
         <div class="menu">
           <div class="zoom desplegable">
-            <a href="#">
+            <a href="#fondoMadera">
               <h2 id="plantas">
                 PLANTAS
               </h2>
             </a>
-            <div class="contenidoDesplegable">
-              <div class="bordeDesplegable">
-                <h2>Plantas de interior</h2>
-                <div class="subDesplegable">
-                  <div>
-                    <a href="#">Hoja verde</a>
-                    <a href="#">Orquídeas</a>
-                    <a href="#">Con flor</a>
-                    <a href="#">Cactus</a>
-                    <a href="#">Suculentas</a>
-                  </div>
-                  <div>
-                    <a href="#">Carnívoras</a>
-                    <a href="#">Colgantes</a>
-                    <a href="#">Acuarios</a>
-                    <a href="#">Aromáticas</a>
-                    <a href="#">Bambú</a>
-                  </div>
-                </div>
-              </div>
 
-              <div>
-                <h2>Plantas de exterior</h2>
-                <div class="subDesplegable">
+            <div class="fondoMadera" id="fondoMadera">
+              <div class="menuHover">
+                <div>
+                  <img src="img/icono_planta_feliz.png">
+                </div>
+                <div class="textoHover">
                   <div>
-                    <a href="#">Arbustos</a>
-                    <a href="#">Aromáticas</a>
-                    <a href="#">Frutales</a>
-                    <a href="#">Trepadoras</a>
+                    <h2>Plantas de interior</h2>
+                    <div class="division1">
+                      <div class="">
+                        <a href="#">Hoja verde</a>
+                        <a href="#">Orquídeas</a>
+                        <a href="#">Con flor</a>
+                        <a href="#">Cactus</a>
+                        <a href="#">Suculentas</a>
+                      </div>
+                      <div>
+                        <a href="#">Carnívoras</a>
+                        <a href="#">Colgantes</a>
+                        <a href="#">Acuarios</a>
+                        <a href="#">Aromáticas</a>
+                        <a href="#">Bambú</a>
+                      </div>
+                    </div>
                   </div>
+
+
                   <div>
-                    <a href="#">Palmeras</a>
-                    <a href="#">Rosales</a>
-                    <a href="#">Árboles</a>
+                    <h2>Plantas de exterior</h2>
+                    <div class="division1">
+                      <div>
+                        <a href="#">Arbustos</a>
+                        <a href="#">Frutales</a>
+                        <a href="#">Trepadoras</a>
+                        <a href="#">Bonsais</a>
+                      </div>
+                      <div>
+                        <a href="#">Palmeras</a>
+                        <a href="#">Rosales</a>
+                        <a href="#">Árboles</a>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="zoom">
+          <div class="zoom desplegable">
             <a href="#">
               <h2 id="jardin">
                 JARDÍN
               </h2>
             </a>
+            <div class="contenidoDesplegable">
+              <div class="bordeDesplegable">
+                <h2>Sustrato</h2>
+                <div class="subDesplegablePlantas">
+                  <div>
+                    <a href="#">Perlita</a>
+                    <a href="#">Vermiculita</a>
+                    <a href="#">Arena</a>
+                    <a href="#">Turba</a>
+                    <a href="#">Fibra de coco</a>
+                    <a href="#">Humus</a>
+                  </div>
+                  <div>
+                    <a href="#">Compost</a>
+                    <a href="#">Guano</a>
+                    <a href="#">Corteza</a>
+                    <a href="#">Roca volcánica</a>
+                    <a href="#">Tierra negra</a>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <h2>Macetas</h2>
+                <div class="subDesplegablePlantas">
+                  <div>
+                    <a href="#">De plástico</a>
+                    <a href="#">De madera</a>
+                    <a href="#">De terracota</a>
+                  </div>
+                  <div>
+                    <a href="#">Maceteros</a>
+                    <a href="#">Jardineras</a>
+                    <a href="#">Para bonsais</a>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <h2>Antiplagas</h2>
+                <div class="subDesplegableJardin">
+                  <a href="#">Insecticidas</a>
+                  <a href="#">Hongos</a>
+                  <a href="#">Plagas</a>
+                </div>
+              </div>
+              <div>
+                <h2>Accesorios</h2>
+                <div class="subDesplegablePlantas">
+                  <div>
+                    <a href="#">Guantes</a>
+                    <a href="#">Rastrillos</a>
+                    <a href="#">Palas</a>
+                  </div>
+                  <div>
+                    <a href="#">Podadoras</a>
+                    <a href="#">Regaderas</a>
+                    <a href="#">Carretillas</a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div class="zoom">
+          <div class="zoom desplegable">
             <a href="#">
               <h2 id="servicios">
                 SERVICIOS
               </h2>
             </a>
+            <div class="contenidoDesplegable contenidoDesplegableServicios">
+              <div class="bordeDesplegable">
+                <h2>Para ti</h2>
+                <div class="subDesplegablePlantas">
+                  <div>
+                    <a href="#">A domicilio</a>
+                    <a href="#">Encargos</a>
+                    <a href="#">Financiación</a>
+                    <a href="#">Newsletter</a>
+                  </div>
+                  <div>
+                    <a href="#">Nuestra marca</a>
+                    <a href="#">Regalos</a>
+                    <a href="#">Tarjeta socios</a>
+                    <a href="#">Talleres/Eventos</a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+        
 
-          <div class="zoom">
-            <a href="#">
-              <h2 id="blog">
-                BLOG
-              </h2>
-            </a>
-          </div>
-
-          <div class="zoom">
-            <a href="#">
-              <h2 id="plantanding">
-                PLANTANDING
-              </h2>
-            </a>
-          </div>
-
-          <div class="zoom">
-            <a href="juego.html">
-              <h2 id="juego">
-                JUEGA
-              </h2>
-            </a>
-          </div>
+        <div class="zoom">
+          <a href="#">
+            <h2 id="blog">
+              BLOG
+            </h2>
+          </a>
         </div>
-      </nav>
+
+        <div class="zoom">
+          <a href="#">
+            <h2 id="plantanding">
+              PLANTANDING
+            </h2>
+          </a>
+        </div>
+
+        <div class="zoom">
+          <a href="juego.html">
+            <h2 id="juego">
+              JUEGA
+            </h2>
+          </a>
+        </div>
+    </div>
+    </nav>
     </div>
   </header>
 
   <!--   <hr> -->
 
-  <!-- CAROUSEL prueba2 -->
 
-<!--   <section class="carousel">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- <div class="fondoMadera" id="fondoMadera">
+    <div class="menuHover">
+      <div>
+        <img src="img/icono_planta_feliz.png">
+      </div>
+      <div class="textoHover">
+        <div>
+          <h2>Plantas de interior</h2>
+          <div class="division1">
+            <div class="">
+              <a href="#">Hoja verde</a>
+              <a href="#">Orquídeas</a>
+              <a href="#">Con flor</a>
+              <a href="#">Cactus</a>
+              <a href="#">Suculentas</a>
+            </div>
+            <div>
+              <a href="#">Carnívoras</a>
+              <a href="#">Colgantes</a>
+              <a href="#">Acuarios</a>
+              <a href="#">Aromáticas</a>
+              <a href="#">Bambú</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div>
+          <h2>Plantas de exterior</h2>
+          <div class="division1">
+            <div>
+              <a href="#">Arbustos</a>
+              <a href="#">Frutales</a>
+              <a href="#">Trepadoras</a>
+              <a href="#">Bonsais</a>
+            </div>
+            <div>
+              <a href="#">Palmeras</a>
+              <a href="#">Rosales</a>
+              <a href="#">Árboles</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+
+
+
+  <!-- CAROUSEL -->
+
+
+  <div class="carousel">
     <div class="slider">
       <div class="slides">
+        <!-- Radio buttons start -->
         <input type="radio" name="radio-btn" id="radio1">
         <input type="radio" name="radio-btn" id="radio2">
         <input type="radio" name="radio-btn" id="radio3">
+        <!-- Radio buttons end -->
 
+        <!-- Slide images start -->
+        <div class="slide first">
+          <!-- <img src="img/banner_plantas.png" alt="banner_plantas"> -->
+          <div class="bannerofertas">
+            <h2 class="contenedor">
+              Ofertas
+            </h2>
 
-        <div class="slide1">
-          <img src="img/icono_planta_feliz.png" alt="">
+            <h3 class="contenedor">
+              ¡El verde está de moda!
+            </h3>
+
+            <p class="contenedor">
+              <strong>Tenemos los mejores precios en plantas de hoja verde. </strong>
+            </p>
+
+            <h4 class="contenedor boton">
+              Ven, ¡y comprúebalo!
+            </h4>
+          </div>
         </div>
 
-        <div class="slide2">
-          <img src="img/icono_plantas-estanteria.png" alt="">
+        <div class="slide">
+          <!-- <img src="img/banner_app_movil.png" alt="banner_app"> -->
+
+          <div class="bannerapp">
+            <h2 class="contenedor textoApp">
+              App Móvil
+            </h2>
+
+            <p>
+              Descubre la app de plantanding.
+              Todos nuestros productos en tu bolsillo.
+              Ya disponible en la Play Store y en Apple Store.
+            </p>
+          </div>
         </div>
 
-        <div class="slide3">
-          <img src="img/icono_plantas_colgantes.png" alt="">
-        </div>
+        <div class="slide">
+          <!-- <img src="img/banner_primavera.webp" alt="banner_primavera"> -->
 
+          <div class="bannerprimaveral sect">
+
+            <div class="contenidoPrimavera">
+              <h2 class="border colorBlur contenedorPrimavera">
+                Novedades
+              </h2>
+
+              <h3 class="contenedorPrimavera">
+                Colección Primavera 2023
+              </h3>
+
+              <p class="contenedorPrimavera">
+                <!--         Macetas, semillas, flores... -->
+                Para que tu jardín sea INIGUALABLE.
+              </p>
+
+              <h4 class="contenedorPrimavera">
+                Esta primavera ¡presume de jardín!
+              </h4>
+            </div>
+          </div>
+        </div>
+        <!-- Slide images end -->
+
+        <!-- Automatic navigation start -->
         <div class="navigation-auto">
           <div class="auto-btn1"></div>
           <div class="auto-btn2"></div>
           <div class="auto-btn3"></div>
         </div>
+        <!-- Automatic navigation end -->
       </div>
 
+      <!-- Manual navigation start -->
       <div class="navigation-manual">
         <label for="radio1" class="manual-btn"></label>
         <label for="radio2" class="manual-btn"></label>
         <label for="radio3" class="manual-btn"></label>
       </div>
+      <!-- Manual navigation end -->
     </div>
-  </section>
- -->
+    <!-- image slider end -->
+  </div>
 
 
- <!-- CAROUSEL prueba1 -->
 
-  <!--   <div class="pic-ctn">
-    <img src="img/banner_plantas.png" alt="" class="pic">
-    <img src="img/Appp móvil sin tiendas.png" alt="" class="pic">
-    <img src="img/banner_primavera.webp" class="pic">
-  </div> -->
+
+
+
+
 
 
   <!-- BANNNER / OFERTAS/APP/NOVEDADES --> <!-- Hacer un carrousel de texto???? -->
-
-  <section> <!-- class="seccionofertas" -->
+  <!-- class="seccionofertas" -->
+  <section>
     <div class="seccionofertas2">
       <div class="bannerofertas">
         <h2 class="contenedor">
@@ -286,9 +495,8 @@
         </p>
 
         <h4 class="contenedor boton">
-          Ven, ¡y comprúebalo!
+          <a hfre="#" target="_blank"> Ven, ¡y comprúebalo! </a>
         </h4>
-
       </div>
 
       <div class="bannerapp">
@@ -427,7 +635,7 @@
         </h3>
       </div>
 
-      <div class="slides">
+      <div class="botones">
         <div class="contenedor imagenes">
           <div>
             <div>
@@ -440,9 +648,35 @@
               Monstera adansonii
             </p>
 
-            <span> Desde </span>
-            19
-            <sup>95€</sup>
+            <div class="precios">
+              <div>
+                <span> Desde </span>
+                19
+                <sup>95€</sup>
+              </div>
+
+              <div>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <svg class="anadirFavoritos" xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-heart" width="25" height="25" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="#009988" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+                  </svg>
+                </a>
+
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <svg class="anadirCarrito" xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-basket" width="25" height="25" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="#009988" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <polyline points="7 10 12 4 17 10" />
+                    <path d="M21 10l-2 8a2 2.5 0 0 1 -2 2h-10a2 2.5 0 0 1 -2 -2l-2 -8z" />
+                    <circle cx="12" cy="15" r="2" />
+                  </svg>
+                </a>
+              </div>
+            </div>
           </div>
 
           <div>
@@ -455,8 +689,35 @@
             <p>
               Chamaedore
             </p>
-            2
-            <sup>95€</sup>
+
+            <div class="precios">
+              <div>
+                2
+                <sup>95€</sup>
+              </div>
+
+              <div>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <svg class="anadirFavoritos" xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-heart" width="25" height="25" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="#009988" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+                  </svg>
+                </a>
+
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <svg class="anadirCarrito" xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-basket" width="25" height="25" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="#009988" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <polyline points="7 10 12 4 17 10" />
+                    <path d="M21 10l-2 8a2 2.5 0 0 1 -2 2h-10a2 2.5 0 0 1 -2 -2l-2 -8z" />
+                    <circle cx="12" cy="15" r="2" />
+                  </svg>
+                </a>
+              </div>
+            </div>
           </div>
 
           <div>
@@ -469,8 +730,35 @@
             <p>
               Ceropegia woodi
             </p>
-            6
-            <sup>95€</sup>
+
+            <div class="precios">
+              <div>
+                6
+                <sup>95€</sup>
+              </div>
+
+              <div>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <svg class="anadirFavoritos" xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-heart" width="25" height="25" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="#009988" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+                  </svg>
+                </a>
+
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <svg class="anadirCarrito" xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-basket" width="25" height="25" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="#009988" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <polyline points="7 10 12 4 17 10" />
+                    <path d="M21 10l-2 8a2 2.5 0 0 1 -2 2h-10a2 2.5 0 0 1 -2 -2l-2 -8z" />
+                    <circle cx="12" cy="15" r="2" />
+                  </svg>
+                </a>
+              </div>
+            </div>
           </div>
 
           <div>
@@ -483,8 +771,35 @@
             <p>
               Aspidistra
             </p>
-            21
-            <sup>95€</sup>
+
+            <div class="precios">
+              <div>
+                21
+                <sup>95€</sup>
+              </div>
+
+              <div>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <svg class="anadirFavoritos" xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-heart" width="25" height="25" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="#009988" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+                  </svg>
+                </a>
+
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <svg class="anadirCarrito" xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-basket" width="25" height="25" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="#009988" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <polyline points="7 10 12 4 17 10" />
+                    <path d="M21 10l-2 8a2 2.5 0 0 1 -2 2h-10a2 2.5 0 0 1 -2 -2l-2 -8z" />
+                    <circle cx="12" cy="15" r="2" />
+                  </svg>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -509,10 +824,37 @@
             </div>
 
             <p>
-              Bonsái Carmona 8 años (Carmona microphylla) Mistral
+              Bonsái Carmona 8 años
             </p>
-            45
-            <sup>95€</sup>
+
+            <div class="precios">
+              <div>
+                45
+                <sup>95€</sup>
+              </div>
+
+              <div>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <svg class="anadirFavoritos" xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-heart" width="25" height="25" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="#009988" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+                  </svg>
+                </a>
+
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <svg class="anadirCarrito" xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-basket" width="25" height="25" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="#009988" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <polyline points="7 10 12 4 17 10" />
+                    <path d="M21 10l-2 8a2 2.5 0 0 1 -2 2h-10a2 2.5 0 0 1 -2 -2l-2 -8z" />
+                    <circle cx="12" cy="15" r="2" />
+                  </svg>
+                </a>
+              </div>
+            </div>
           </div>
 
           <div>
@@ -523,10 +865,37 @@
             </div>
 
             <p>
-              Bonsai Citrus 10 años (Citrus myrtifolia) Mistral
+              Bonsai Citrus 10 años
             </p>
-            69
-            <sup>95€</sup>
+
+            <div class="precios">
+              <div>
+                69
+                <sup>95€</sup>
+              </div>
+
+              <div>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <svg class="anadirFavoritos" xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-heart" width="25" height="25" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="#009988" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+                  </svg>
+                </a>
+
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <svg class="anadirCarrito" xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-basket" width="25" height="25" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="#009988" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <polyline points="7 10 12 4 17 10" />
+                    <path d="M21 10l-2 8a2 2.5 0 0 1 -2 2h-10a2 2.5 0 0 1 -2 -2l-2 -8z" />
+                    <circle cx="12" cy="15" r="2" />
+                  </svg>
+                </a>
+              </div>
+            </div>
           </div>
 
           <div>
@@ -537,10 +906,37 @@
             </div>
 
             <p>
-              Bonsái Ficus 10 años (Ficus retusa) Mistral
+              Bonsái Ficus 10 años
             </p>
-            64
-            <sup>95€</sup>
+
+            <div class="precios">
+              <div>
+                64
+                <sup>95€</sup>
+              </div>
+
+              <div>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <svg class="anadirFavoritos" xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-heart" width="25" height="25" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="#009988" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+                  </svg>
+                </a>
+
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <svg class="anadirCarrito" xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-basket" width="25" height="25" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="#009988" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <polyline points="7 10 12 4 17 10" />
+                    <path d="M21 10l-2 8a2 2.5 0 0 1 -2 2h-10a2 2.5 0 0 1 -2 -2l-2 -8z" />
+                    <circle cx="12" cy="15" r="2" />
+                  </svg>
+                </a>
+              </div>
+            </div>
           </div>
 
           <div>
@@ -550,159 +946,401 @@
                 alt="Bonsái Carmona 10 años (Carmona mycrophylla) Mistral">
             </div>
 
-            <p>
-              Bonsái Carmona 10 años (Carmona mycrophylla) Mistral
-            </p>
-            65
-            <sup>95€</sup>
+            <div class="precios">
+              <div>
+                <p>
+                  Bonsái Carmona 10 años
+                </p>
+                65
+                <sup>95€</sup>
+              </div>
+
+              <div>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <svg class="anadirFavoritos" xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-heart" width="25" height="25" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="#009988" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+                  </svg>
+                </a>
+
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <svg class="anadirCarrito" xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-basket" width="25" height="25" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="#009988" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <polyline points="7 10 12 4 17 10" />
+                    <path d="M21 10l-2 8a2 2.5 0 0 1 -2 2h-10a2 2.5 0 0 1 -2 -2l-2 -8z" />
+                    <circle cx="12" cy="15" r="2" />
+                  </svg>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- PLANTAS DE EXTERIOR -->
-
-    <div>
-      <div class="contenedor accesosTitulo">
-        <h3>
-          Plantas de exterior
-        </h3>
-      </div>
+      <!-- PLANTAS DE EXTERIOR -->
 
       <div>
-        <div class="contenedor imagenes">
-          <div>
+        <div class="contenedor accesosTitulo">
+          <h3>
+            Plantas de exterior
+          </h3>
+        </div>
+
+        <div>
+          <div class="contenedor imagenes">
             <div>
-              <img
-                src="https://res.cloudinary.com/fronda/image/upload/f_auto,q_auto,c_pad,dpr_2.0,g_center,w_300,h_300/productos/fol/10041/10041189_1.jpg?18-01-2023"
-                alt="Aucuba japónica crotonifolia">
+              <div>
+                <img
+                  src="https://res.cloudinary.com/fronda/image/upload/f_auto,q_auto,c_pad,dpr_2.0,g_center,w_300,h_300/productos/fol/10041/10041189_1.jpg?18-01-2023"
+                  alt="Aucuba japónica crotonifolia">
+              </div>
+
+              <p>
+                Aucuba japónica crotonifolia
+              </p>
+
+              <div class="precios">
+                <div>
+                  12
+                  <sup>55€</sup>
+                </div>
+
+                <div>
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    <svg class="anadirFavoritos" xmlns="http://www.w3.org/2000/svg"
+                      class="icon icon-tabler icon-tabler-heart" width="25" height="25" viewBox="0 0 24 24"
+                      stroke-width="1.5" stroke="#009988" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+                    </svg>
+                  </a>
+
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    <svg class="anadirCarrito" xmlns="http://www.w3.org/2000/svg"
+                      class="icon icon-tabler icon-tabler-basket" width="25" height="25" viewBox="0 0 24 24"
+                      stroke-width="1.5" stroke="#009988" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <polyline points="7 10 12 4 17 10" />
+                      <path d="M21 10l-2 8a2 2.5 0 0 1 -2 2h-10a2 2.5 0 0 1 -2 -2l-2 -8z" />
+                      <circle cx="12" cy="15" r="2" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
             </div>
 
-            <p>
-              Aucuba japónica crotonifolia
-            </p>
-            12
-            <sup>55€</sup>
-          </div>
-
-          <div>
             <div>
-              <img
-                src="https://res.cloudinary.com/fronda/image/upload/f_auto,q_auto,c_pad,dpr_2.0,g_center,w_300,h_300/productos/fol/11044/11044404_1.jpg?18-01-2023"
-                alt="Ciprés de Leyland (Cupressocyparis leylandii castlew gold)">
+              <div>
+                <img
+                  src="https://res.cloudinary.com/fronda/image/upload/f_auto,q_auto,c_pad,dpr_2.0,g_center,w_300,h_300/productos/fol/11044/11044404_1.jpg?18-01-2023"
+                  alt="Ciprés de Leyland (Cupressocyparis leylandii castlew gold)">
+              </div>
+
+              <p>
+                Ciprés de Leyland
+              </p>
+
+              <div class="precios">
+                <div>
+                  89
+                  <sup>95€</sup>
+                </div>
+
+                <div>
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    <svg class="anadirFavoritos" xmlns="http://www.w3.org/2000/svg"
+                      class="icon icon-tabler icon-tabler-heart" width="25" height="25" viewBox="0 0 24 24"
+                      stroke-width="1.5" stroke="#009988" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+                    </svg>
+                  </a>
+
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    <svg class="anadirCarrito" xmlns="http://www.w3.org/2000/svg"
+                      class="icon icon-tabler icon-tabler-basket" width="25" height="25" viewBox="0 0 24 24"
+                      stroke-width="1.5" stroke="#009988" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <polyline points="7 10 12 4 17 10" />
+                      <path d="M21 10l-2 8a2 2.5 0 0 1 -2 2h-10a2 2.5 0 0 1 -2 -2l-2 -8z" />
+                      <circle cx="12" cy="15" r="2" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
             </div>
 
-            <p>
-              Ciprés de Leyland (Cupressocyparis leylandii castlew gold)
-            </p>
-            89
-            <sup>95€</sup>
-          </div>
-
-          <div>
             <div>
-              <img
-                src="https://res.cloudinary.com/fronda/image/upload/f_auto,q_auto,c_pad,dpr_2.0,g_center,w_300,h_300/productos/fol/11083/11083618_1.jpg?18-01-2023"
-                alt="Berberis thunbergii admiration">
+              <div>
+                <img
+                  src="https://res.cloudinary.com/fronda/image/upload/f_auto,q_auto,c_pad,dpr_2.0,g_center,w_300,h_300/productos/fol/11083/11083618_1.jpg?18-01-2023"
+                  alt="Berberis thunbergii admiration">
+              </div>
+
+              <p>
+                Berberis thunbergii admiration
+              </p>
+
+              <div class="precios">
+                <div>
+                  10
+                  <sup>95€</sup>
+                </div>
+
+                <div>
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    <svg class="anadirFavoritos" xmlns="http://www.w3.org/2000/svg"
+                      class="icon icon-tabler icon-tabler-heart" width="25" height="25" viewBox="0 0 24 24"
+                      stroke-width="1.5" stroke="#009988" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+                    </svg>
+                  </a>
+
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    <svg class="anadirCarrito" xmlns="http://www.w3.org/2000/svg"
+                      class="icon icon-tabler icon-tabler-basket" width="25" height="25" viewBox="0 0 24 24"
+                      stroke-width="1.5" stroke="#009988" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <polyline points="7 10 12 4 17 10" />
+                      <path d="M21 10l-2 8a2 2.5 0 0 1 -2 2h-10a2 2.5 0 0 1 -2 -2l-2 -8z" />
+                      <circle cx="12" cy="15" r="2" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
             </div>
 
-            <p>
-              Berberis thunbergii admiration
-            </p>
-            10
-            <sup>95€</sup>
-          </div>
-
-          <div>
             <div>
-              <img
-                src="https://res.cloudinary.com/fronda/image/upload/f_auto,q_auto,c_pad,dpr_2.0,g_center,w_300,h_300/productos/fol/10017/10017220_1.jpg?17-01-2023"
-                alt="Photinia x fraseri red robin">
-            </div>
+              <div>
+                <img
+                  src="https://res.cloudinary.com/fronda/image/upload/f_auto,q_auto,c_pad,dpr_2.0,g_center,w_300,h_300/productos/fol/10017/10017220_1.jpg?17-01-2023"
+                  alt="Photinia x fraseri red robin">
+              </div>
 
-            <p>
-              Photinia x fraseri red robin
-            </p>
-            8
-            <sup>95€</sup>
+              <p>
+                Photinia x fraseri red robin
+              </p>
+
+              <div class="precios">
+                <div>
+                  8
+                  <sup>95€</sup>
+                </div>
+
+                <div>
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    <svg class="anadirFavoritos" xmlns="http://www.w3.org/2000/svg"
+                      class="icon icon-tabler icon-tabler-heart" width="25" height="25" viewBox="0 0 24 24"
+                      stroke-width="1.5" stroke="#009988" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+                    </svg>
+                  </a>
+
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    <svg class="anadirCarrito" xmlns="http://www.w3.org/2000/svg"
+                      class="icon icon-tabler icon-tabler-basket" width="25" height="25" viewBox="0 0 24 24"
+                      stroke-width="1.5" stroke="#009988" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <polyline points="7 10 12 4 17 10" />
+                      <path d="M21 10l-2 8a2 2.5 0 0 1 -2 2h-10a2 2.5 0 0 1 -2 -2l-2 -8z" />
+                      <circle cx="12" cy="15" r="2" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- SEMILLAS -->
-
-    <div>
-      <div class="contenedor accesosTitulo">
-        <h3>
-          Semillas
-        </h3>
-      </div>
+      <!-- SEMILLAS -->
 
       <div>
-        <div class="contenedor imagenes">
-          <div>
+        <div class="contenedor accesosTitulo">
+          <h3>
+            Semillas
+          </h3>
+        </div>
+
+        <div>
+          <div class="contenedor imagenes">
             <div>
-              <img
-                src="https://res.cloudinary.com/fronda/image/upload/f_auto,q_auto,c_lpad,b_auto,w_515,h_515/productos/fol/10008/10008451_1.jpg?17-01-2023%201x,%20https://res.cloudinary.com/fronda/image/upload/f_auto,q_auto,c_lpad,b_auto,dpr_2.0,w_515,h_515/productos/fol/10008/10008451_1.jpg?17-01-2023%202x"
-                alt="Semillas rúcula">
+              <div>
+                <img
+                  src="https://res.cloudinary.com/fronda/image/upload/f_auto,q_auto,c_lpad,b_auto,w_515,h_515/productos/fol/10008/10008451_1.jpg?17-01-2023%201x,%20https://res.cloudinary.com/fronda/image/upload/f_auto,q_auto,c_lpad,b_auto,dpr_2.0,w_515,h_515/productos/fol/10008/10008451_1.jpg?17-01-2023%202x"
+                  alt="Semillas rúcula">
+              </div>
+
+              <p>
+                Semillas rúcula
+              </p>
+
+              <div class="precios">
+                <div>
+                  <span> Desde </span>
+                  1
+                  <sup>99€</sup>
+                </div>
+
+                <div>
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    <svg class="anadirFavoritos" xmlns="http://www.w3.org/2000/svg"
+                      class="icon icon-tabler icon-tabler-heart" width="25" height="25" viewBox="0 0 24 24"
+                      stroke-width="1.5" stroke="#009988" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+                    </svg>
+                  </a>
+
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    <svg class="anadirCarrito" xmlns="http://www.w3.org/2000/svg"
+                      class="icon icon-tabler icon-tabler-basket" width="25" height="25" viewBox="0 0 24 24"
+                      stroke-width="1.5" stroke="#009988" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <polyline points="7 10 12 4 17 10" />
+                      <path d="M21 10l-2 8a2 2.5 0 0 1 -2 2h-10a2 2.5 0 0 1 -2 -2l-2 -8z" />
+                      <circle cx="12" cy="15" r="2" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
             </div>
 
-            <p>
-              Semillas rúcula
-            </p>
-            <span> Desde </span>
-            1
-            <sup>99€</sup>
-          </div>
-
-          <div>
             <div>
-              <img
-                src="https://res.cloudinary.com/fronda/image/upload/f_auto,q_auto,c_pad,w_2000,h_2000/productos/fol/10010/10010181_1.jpg?17-01-2023"
-                alt="Semilla pimiento piquillo">
+              <div>
+                <img
+                  src="https://res.cloudinary.com/fronda/image/upload/f_auto,q_auto,c_pad,w_2000,h_2000/productos/fol/10010/10010181_1.jpg?17-01-2023"
+                  alt="Semilla pimiento piquillo">
+              </div>
+
+
+              <p>
+                Semilla pimiento piquillo
+              </p>
+
+              <div class="precios">
+                <div>
+                  <span> Desde </span>
+                  1
+                  <sup>95€</sup>
+                </div>
+
+                <div>
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    <svg class="anadirFavoritos" xmlns="http://www.w3.org/2000/svg"
+                      class="icon icon-tabler icon-tabler-heart" width="25" height="25" viewBox="0 0 24 24"
+                      stroke-width="1.5" stroke="#009988" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+                    </svg>
+                  </a>
+
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    <svg class="anadirCarrito" xmlns="http://www.w3.org/2000/svg"
+                      class="icon icon-tabler icon-tabler-basket" width="25" height="25" viewBox="0 0 24 24"
+                      stroke-width="1.5" stroke="#009988" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <polyline points="7 10 12 4 17 10" />
+                      <path d="M21 10l-2 8a2 2.5 0 0 1 -2 2h-10a2 2.5 0 0 1 -2 -2l-2 -8z" />
+                      <circle cx="12" cy="15" r="2" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
             </div>
 
-            <p>
-              Semilla pimiento piquillo
-            </p>
-            <span> Desde </span>
-            1
-            <sup>95€</sup>
-          </div>
-
-          <div>
             <div>
-              <img
-                src="https://res.cloudinary.com/fronda/image/upload/f_auto,q_auto,c_pad,w_2000,h_2000/productos/fol/10022/10022154_1.jpg?17-01-2023"
-                alt="Semilla calabaza butternut">
+              <div>
+                <img
+                  src="https://res.cloudinary.com/fronda/image/upload/f_auto,q_auto,c_pad,w_2000,h_2000/productos/fol/10022/10022154_1.jpg?17-01-2023"
+                  alt="Semilla calabaza butternut">
+              </div>
+
+              <p>
+                Semilla calabaza butternut
+              </p>
+
+              <div class="precios">
+                <div>
+                  <span> Desde </span>
+                  1
+                  <sup>95€</sup>
+                </div>
+
+                <div>
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    <svg class="anadirFavoritos" xmlns="http://www.w3.org/2000/svg"
+                      class="icon icon-tabler icon-tabler-heart" width="25" height="25" viewBox="0 0 24 24"
+                      stroke-width="1.5" stroke="#009988" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+                    </svg>
+                  </a>
+
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    <svg class="anadirCarrito" xmlns="http://www.w3.org/2000/svg"
+                      class="icon icon-tabler icon-tabler-basket" width="25" height="25" viewBox="0 0 24 24"
+                      stroke-width="1.5" stroke="#009988" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <polyline points="7 10 12 4 17 10" />
+                      <path d="M21 10l-2 8a2 2.5 0 0 1 -2 2h-10a2 2.5 0 0 1 -2 -2l-2 -8z" />
+                      <circle cx="12" cy="15" r="2" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
             </div>
 
-            <p>
-              Semilla calabaza butternut
-            </p>
-            <span> Desde </span>
-            1
-            <sup>95€</sup>
-          </div>
-
-          <div>
             <div>
-              <img
-                src="https://res.cloudinary.com/fronda/image/upload/f_auto,q_auto,c_pad,w_2000,h_2000/productos/fol/10000/10000218_1.jpg?17-01-2023"
-                alt="Semilla sandia crimson sweet">
-            </div>
+              <div>
+                <img
+                  src="https://res.cloudinary.com/fronda/image/upload/f_auto,q_auto,c_pad,w_2000,h_2000/productos/fol/10000/10000218_1.jpg?17-01-2023"
+                  alt="Semilla sandia crimson sweet">
+              </div>
 
-            <p>
-              Semilla sandia crimson sweet
-            </p>
-            <span> Desde </span>
-            1
-            <sup>95€</sup>
+              <p>
+                Semilla sandia crimson sweet
+              </p>
+
+              <div class="precios">
+                <div>
+                  <span> Desde </span>
+                  1
+                  <sup>95€</sup>
+                </div>
+
+                <div>
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    <svg class="anadirFavoritos" xmlns="http://www.w3.org/2000/svg"
+                      class="icon icon-tabler icon-tabler-heart" width="25" height="25" viewBox="0 0 24 24"
+                      stroke-width="1.5" stroke="#009988" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+                    </svg>
+                  </a>
+
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    <svg class="anadirCarrito" xmlns="http://www.w3.org/2000/svg"
+                      class="icon icon-tabler icon-tabler-basket" width="25" height="25" viewBox="0 0 24 24"
+                      stroke-width="1.5" stroke="#009988" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <polyline points="7 10 12 4 17 10" />
+                      <path d="M21 10l-2 8a2 2.5 0 0 1 -2 2h-10a2 2.5 0 0 1 -2 -2l-2 -8z" />
+                      <circle cx="12" cy="15" r="2" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
   </section>
 
 
@@ -1013,6 +1651,9 @@
     </div>
   </footer>
 
+
+
+  <script src="js/script.js"></script>
 
 </body>
 
