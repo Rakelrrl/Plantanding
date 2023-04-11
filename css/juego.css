@@ -1,85 +1,83 @@
 html {
-    font-size: 62.5%;
-  }
-  
-  body {
-    font-size: 16px;
-    margin: 0px;
-    background-color: #a599ff;
-  }
-
-  h1 {
-    text-align: center;
-    margin: 2rem;
-    color: white;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.46);
-  }
-
-  * {
-    margin: 0 auto;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-  .tablero {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    max-width: 600px;
-    gap: 30px;
-  }
-
-  figure,
-  figure img {
-    display: inline-block;
-    width: 100%;
-  }
-
-  figure {
-    position: relative;
-    transform-style: preserve-3d;   /* Hace que todos los elementos hijos y él preserven el 3D */
-    transform: perspective(600px) rotateY(0deg);   /* Hace que roten las figuras pero se sigue viendo la imagen por encima */
-    transition: all ease .5s;
-    cursor: pointer;
-    box-shadow: 3px 3px 16px rgba(0, 0, 0, 0.5);
-  }
-
-  figure::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0);
-    transition: all ease 0.3s;
-  }
-
-  figure:hover::after {
-    background-color: rgba(255, 255, 255, 0.2);
-    
-  }
-
-  /* Clase que me dice qué ocurre al dar la vuelta a la carta */
-  figure.mediaVuelta {  /* Añadir esta clase después */   
-    transform: perspective(600px) rotateY(180deg);  
+  font-size: 62.5%;
 }
 
-  figure .anverso { /* searched-image */
-    position: absolute;
-    top: 0;
-    transform: perspective(600px) rotateY(180deg);
-    backface-visibility: hidden;
-  }
+body {
+  font-size: 16px;
+  margin: 0px;
+  background-color: #a599ff;
+}
+
+h1 {
+  text-align: center;
+  margin: 2rem;
+  color: white;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.46);
+}
+
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.tablero {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 600px;
+  gap: 30px;
+}
+
+figure,
+figure img {
+  display: inline-block;
+  width: 100%;
+}
+
+figure {
+  position: relative;
+  transform-style: preserve-3d;
+  /* Hace que todos los elementos hijos y él preserven el 3D */
+  transform: perspective(600px) rotateY(0deg);
+  /* Hace que roten las figuras pero se sigue viendo la imagen por encima */
+  transition: all ease .5s;
+  cursor: pointer;
+  box-shadow: 3px 3px 16px rgba(0, 0, 0, 0.5);
+}
+
+figure::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0);
+  transition: all ease 0.3s;
+}
+
+figure:hover::after {
+  background-color: rgba(255, 255, 255, 0.2);
+
+}
+
+/* Clase que me dice qué ocurre al dar la vuelta a la carta */
+figure:hover {
+  /* Añadir esta clase después */
+  transform: perspective(600px) rotateY(180deg);
+}
+
+figure .anverso {
+  /* searched-image */
+  position: absolute;
+  top: 0;
+  transform: perspective(600px) rotateY(180deg);
+  backface-visibility: hidden;
+}
 
 figure .reverso {
-    display: block;
-    /* Hace que al darse la vuelta, esta tarjeta no se vea */
-    backface-visibility: hidden;    
+  display: block;
+  /* Hace que al darse la vuelta, esta tarjeta no se vea */
+  backface-visibility: hidden;
 }
-
-
-
-
-
-  
