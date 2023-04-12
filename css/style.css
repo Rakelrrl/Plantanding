@@ -28,8 +28,8 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 2; */
-}
+  z-index: 2; 
+} */
 
 body {
   font-size: 16px;
@@ -140,16 +140,18 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* Intento de darle fondo */
-/* .wrapper{
+.wrapper{
   display:flex;
   justify-content: center;
   align-items: center;
   background-image: url(../img/banner_plantas.png) no-repeat;
   background-size: cover;
 }
- */
+ 
 .wrapper {
-  position: relative;
+  position: absolute;
+  right: 0;
+  top: 15%;
   width: 400px;
   height: 440px;
   background: transparent;
@@ -209,7 +211,7 @@ body::-webkit-scrollbar-thumb {
   width: 45px;
   height: 45px;
   background: #162938;
-  font-size: 2em;
+  font-size: 1.6em;
   color: #fff;
   display: flex;
   justify-content: center;
@@ -220,7 +222,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .form-box h2 {
-  font-size: 3em;
+  font-size: 1.6em;
   color: #162938;
   text-align: center;
 }
@@ -238,7 +240,7 @@ body::-webkit-scrollbar-thumb {
   top: 50%;
   left: 5px;
   transform: translateY(-50%);
-  font-size: 2em;
+  font-size: 1.6em;
   color: #162938;
   font-weight: 500;
   pointer-events: none;
@@ -256,7 +258,7 @@ body::-webkit-scrollbar-thumb {
   background: transparent;
   border: none;
   outline: none;
-  font-size: 2em;
+  font-size: 1.6em;
   color: #162938;
   font-weight: 600px;
   padding: 0 35px 0 5px;
@@ -265,14 +267,16 @@ body::-webkit-scrollbar-thumb {
 .input-box .icon {
   position: absolute;
   right: 8px;
-  font-size: 2.2rem;
+  font-size: 1.6rem;
   color: #162938;
   line-height: 57px;
 }
 
 /* Le da espacio a la pregunta de si has olvidado la contraseña vs recordarme */
 .remember-forgot {
-  font-size: 1.5em;
+  display:grid;
+  grid-template-rows: 1fr 1fr;
+  font-size: 1.2em;
   color: #162938;
   font-weight: 500;
   margin: -15px 0 15px;
@@ -303,7 +307,7 @@ body::-webkit-scrollbar-thumb {
   outline: none;
   border-radius: 6px;
   cursor: pointer;
-  font-size: 2em;
+  font-size: 1.6em;
   color: #fff;
   font-weight: 500;
 }
@@ -395,7 +399,6 @@ body::-webkit-scrollbar-thumb {
 
 .menuResponsive {
   display: none;
-  
 }
 
 .btnLogim-popup {
@@ -1354,6 +1357,7 @@ body::-webkit-scrollbar-thumb {
   width: 100%;
   margin: 0 auto;
   overflow: auto;
+  display: none;
 }
 
 .socialicon {
@@ -1443,7 +1447,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* jump social icons */
-@-webkit-keyframes iconjump {
+ @-webkit-keyframes iconjump {
   0% {
     top: 33px;
   }
@@ -2430,6 +2434,7 @@ margin-top:-62px;
 
   .responsive {
     display: none;
+    
   }
 
   .menuResponsive {
