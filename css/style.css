@@ -19,10 +19,17 @@ html {
   src: url(../Quicksand/static/Quicksand-Light.ttf);
 }
 
-/* header {
+/*  header {
   position: fixed;
-  z-index: 2;
-} */
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2; */
+}
 
 body {
   font-size: 16px;
@@ -67,11 +74,14 @@ body::-webkit-scrollbar-thumb {
 
 /*      LOGIN      */
 
-/* .nav a {
+.nav .btnloginr {
   position: relative;
+  font-size: 1.1rem;
+  margin-left: 40px;
 }
 
-.nav a:after {
+/* cambiar a partir de aquí para la línea blanca del nav al pasar el cursor */
+.nav .btnloginr:after {
   content: '';
   position: absolute;
   left: 0;
@@ -85,10 +95,59 @@ body::-webkit-scrollbar-thumb {
   transition: transform.5s;
 }
 
-.nav a:hover:after {
+/* .nav .icon-tabler:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 3px;
+  background: #fff;
+  border-radius: 5px;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform.5s;
+} */
+
+.nav .btnloginr:hover:after {
+  transform-origin: left;
   transform: scaleX(1);
 }
 
+/* .nav .icon-tabler:hover:after {
+  transform-origin: left;
+  transform: scaleX(1);
+} */
+
+.nav .btnLogin-popup {
+  width: 130px;
+  height: 50px;
+  background: transparent;
+  border: 2px solid #fff;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.1em;
+  color: #fff;
+  font-weight: 500;
+  margin-left: 40px;
+  transition: .5s;
+}
+
+.nav .btnLogin-popup:hover {
+  background: #fff;
+  color: #162938;
+}
+
+/* Intento de darle fondo */
+/* .wrapper{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../img/banner_plantas.png) no-repeat;
+  background-size: cover;
+}
+ */
 .wrapper {
   position: relative;
   width: 400px;
@@ -101,14 +160,49 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   justify-content: center;
   align-items: center;
-} */
+  overflow: hidden; /* esto oculta el otro "cartel" cuando aparece el contrario */
+  transform: scale(0);
+  transition: transform .5s ease, height .2s ease;
+}
 
-/* .wrapper .form-box{
+.wrapper.active-popup {
+  transform: scale(1);
+}
+
+.wrapper.active {
+  height: 520px;
+}
+
+.wrapper .form-box {
   width: 100%;
   padding: 40px;
-} */
+}
 
-/* .wrapper .icon-close {
+/* Oculta el registro de usuario, los desplazamos sobre la tabla transparente*/
+.wrapper .form-box.login {
+  /*   display: none; */
+  transition: transform .18s ease;
+  transform: translateX(0);
+}
+
+.wrapper.active .form-box.login {
+  transition: none;
+  transform: translateX(400px);
+}
+
+.wrapper .form-box.register {
+  position: absolute;
+  transition: none;
+  transform: translateX(400px);
+}
+
+.wrapper.active .form-box.register {
+  transition: transform .18s ease;
+  transform: translateX(0);
+}
+
+/* le da formato a la cruz para cerrar */
+.wrapper .icon-close {
   position: absolute;
   top: 0;
   right: 0;
@@ -122,15 +216,11 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
   border-bottom-left-radius: 20px;
   cursor: pointer;
-}
-
-.wrapper .form-box {
-  width: 100%;
-  padding: 40px;
+  z-index: 1;
 }
 
 .form-box h2 {
-  font-size: 2em;
+  font-size: 3em;
   color: #162938;
   text-align: center;
 }
@@ -148,7 +238,7 @@ body::-webkit-scrollbar-thumb {
   top: 50%;
   left: 5px;
   transform: translateY(-50%);
-  font-size: 1em;
+  font-size: 2em;
   color: #162938;
   font-weight: 500;
   pointer-events: none;
@@ -166,23 +256,23 @@ body::-webkit-scrollbar-thumb {
   background: transparent;
   border: none;
   outline: none;
-  font-size: 1em;
+  font-size: 2em;
   color: #162938;
   font-weight: 600px;
-  padding: 0 35px 0;
+  padding: 0 35px 0 5px;
 }
 
 .input-box .icon {
   position: absolute;
   right: 8px;
-  font-size: 1.2rem;
+  font-size: 2.2rem;
   color: #162938;
   line-height: 57px;
 }
- */
+
 /* Le da espacio a la pregunta de si has olvidado la contraseña vs recordarme */
-/* .remember-forgot {
-  font-size: .9em;
+.remember-forgot {
+  font-size: 1.5em;
   color: #162938;
   font-weight: 500;
   margin: -15px 0 15px;
@@ -193,10 +283,10 @@ body::-webkit-scrollbar-thumb {
 .remember-forgot label input {
   accent-color: #162938;
   margin-right: 3px;
-} */
+}
 
 /* Quitarle la raya de abajo a la pregunta de si has olvidado la contraseña */
-/* .remember-forgot a {
+.remember-forgot a {
   color: #162938;
   text-decoration: none;
 }
@@ -213,24 +303,28 @@ body::-webkit-scrollbar-thumb {
   outline: none;
   border-radius: 6px;
   cursor: pointer;
-  font-size: 1em;
-  color=#fff;
+  font-size: 2em;
+  color: #fff;
   font-weight: 500;
 }
 
 .login-register {
-  font-size: .9em;
+  font-size: 1.5em;
   color: 162938;
   text-align: center;
   font-weight: 500;
-  margin: 25px 0 13px
+  margin: 25px 0 10px;
 }
 
 .login-register p a {
   color: 162938;
   text-decoration: none;
-  font-weight: ;
-} */
+  font-weight: 600;
+}
+
+.login-register p a:hover {
+  text-decoration: underline;
+}
 
 
 /*       LOGO        */
@@ -297,6 +391,11 @@ body::-webkit-scrollbar-thumb {
   justify-content: space-evenly;
   padding-left: 12px;
   margin-top: 4px;
+}
+
+.menuResponsive {
+  display: none;
+  
 }
 
 .btnLogim-popup {
@@ -1214,6 +1313,10 @@ body::-webkit-scrollbar-thumb {
   margin-bottom: 50px;
 }
 
+.tituloDiferente span {
+  color: white;
+}
+
 .diferentes {
   text-align: center;
   display: grid;
@@ -1241,6 +1344,7 @@ body::-webkit-scrollbar-thumb {
   border-right: 1.5px solid var(--iconos);
   padding: 10px 20px;
   line-height: 1.2;
+  font-size: medium;
 }
 
 
@@ -2177,3 +2281,193 @@ transition:  margin-top 250ms ease-in;
 .social:hover img{
 margin-top:-62px;
 } */
+
+
+
+
+@media(max-width: 1250px) {
+  .fondoJardin {
+    width: 800%;
+  }
+}
+
+@media(max-width: 1150px) {
+  .fondoServicios {
+    width: 555%;
+  }
+
+  .fondoMadera {
+    width: 700%;
+  }
+
+  .menuPlantas img {
+    left: -30%;
+  }
+
+  .menuPlantas div h2 {
+    line-height: 1.2;
+  }
+
+  .bannerprimaveral h2 {
+    font-size: 50px;
+    padding: 5px 0 10px 50px;
+    height: auto;
+    backdrop-filter: blur(2px);
+  }
+
+  .bannerprimaveral h3 {
+    font-size: 24px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+
+  .bannerprimaveral p {
+    font-size: 15px;
+    font-weight: 800;
+    line-height: 1.4;
+    padding-bottom: 20px;
+  }
+}
+
+@media(max-width:1050px) {
+  .fondoJardin {
+    width: 700%;
+  }
+}
+
+@media(min-width: 1100px){
+  .tituloDiferente span {
+    display: none;
+  }
+}
+
+@media(max-width: 975px) {
+  .bannerprimaveral {
+    display: none;
+  }
+
+  .diferentes {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    justify-content: space-around;
+  }
+
+  .tituloDiferente span {
+    display: none;
+  }
+}
+
+@media(max-width: 915px) {
+  .fondoMadera {
+    width: 600%;
+  }
+
+  .fondoJardin {
+    width: 600%;
+    margin-left: 0rem;
+    height: 90vh;
+    margin-left: -15rem;
+  }
+
+  .menuJardin {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .desaparecer {
+    display: none;
+  }
+
+  .menuJardin img {
+    display: none;
+  }
+
+  .fondoServicios {
+    width: 400%;
+  }
+
+  .categorias {
+    display: grid;
+    grid: 100px 100px 100px 100px 100px / 100%;
+    gap: 5px;
+    width: 90%;
+    justify-content: space-around;
+    margin-left: 5%;
+  }
+
+  .imgCategoria span {
+    width: 40%;
+    height: 100%;
+  }
+
+  .imgCategoria span:hover {
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(90deg, rgba(160, 227, 74, 0), rgba(160, 227, 74, 0.8));
+    border-radius: 8px;
+  }
+}
+
+@media(max-width: 850px) {
+  .redes-solas a {
+    display: none;
+  }
+
+  .pagos-solos span {
+    display: none;
+  }
+}
+
+@media(max-width: 750px) {
+  .imagenes {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .iconos{
+    justify-content: flex-end;
+  }
+
+  .responsive {
+    display: none;
+  }
+
+  .menuResponsive {
+    display: flex;
+  }
+}
+
+
+@media(max-width: 700px) {
+  .desplegable:hover .fondoJardin {
+    display: none;
+  }
+
+  .desplegable:hover .fondoMadera {
+    display: none;
+  }
+
+  .desplegable:hover .fondoServicios {
+    display: none;
+  }
+}
+
+@media(max-width: 670px) {
+  .menu {
+    display: grid;
+    grid: 50px 50px 50px 50px 50px 50px / 100%;
+    justify-items: center;
+  }
+
+  .zoom {
+    box-shadow: 0 5px 6px rgb(0 0 0);
+    width: 100%;
+    text-align: center;
+    padding-top: 1%;
+  }
+
+  .carousel {
+    display: none;
+  }
+
+}

@@ -37,35 +37,58 @@
   <header>
 
     <!-- LOGIN  -->
+    <div class="wrapper">
+      <span class="icon-close"><ion-icon name="close-outline"></ion-icon></span>
 
-    <!--   <div class="wrapper">
-    <span class="icon-close"></span>
-
-    <div class="form-box login">
-      <h2>Login</h2>
-      <form action="#">
-        <div class="input-box">
-          <span class="icon"></span>
-          <input type="email" required>
-          <label>Email</label>
-        </div>
-        <div class="input-box">
-          <span class="icon"></span>
-          <input type="password" required>
-          <label>Contraseña</label>
-        </div>
-        <div class="remember-forgot">
-          <label><input type="checkbox">
-            Recordarme </label>
+      <div class="form-box login">
+        <h2>Login</h2>
+        <form action="#">
+          <div class="input-box">
+            <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+            <input type="email" required>
+            <label>Email</label>
+          </div>
+          <div class="input-box">
+            <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+            <input type="password" required>
+            <label>Contraseña</label>
+          </div>
+          <div class="remember-forgot">
+            <label><input type="checkbox">
+              Recordarme </label>
             <a href="#">¿Has olvidado la contraseña?</a>
-        </div>
-        <button type="submit" class="btn">Login</button>
-        <div class="login-register">
-          <p>¿No tienes cuenta?<a href="#" class="register-link">Regístrate</a></p>
-        </div>
-      </form>
+          </div>
+          <button type="submit" class="btn">Login</button>
+          <div class="login-register">
+            <p>¿No tienes cuenta?<a href="#" class="register-link">Regístrate</a></p>
+          </div>
+        </form>
+      </div>
+
+      <div class="form-box register">
+        <h2>Registrarse</h2>
+        <form action="#">
+          <div class="input-box">
+            <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+            <input type="text" required>
+            <label>Usuario</label>
+          </div>
+          <div class="input-box">
+            <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+            <input type="password" required>
+            <label>Contraseña</label>
+          </div>
+          <div class="remember-forgot">
+            <label><input type="checkbox">
+              Estoy de acuerdo con los términos y condiciones </label>
+          </div>
+          <button type="submit" class="btn">Registrarse</button>
+          <div class="login-register">
+            <p>¿Ya tienes cuenta?<a href="#" class="login-link">Login</a></p>
+          </div>
+        </form>
+      </div>
     </div>
-  </div> -->
 
     <!-- <header> -->
     <div class="banner">
@@ -100,7 +123,7 @@
           <!-- ICONOS ACCESOS -->
 
           <div class="iconos">
-            <div>
+            <div class="responsive">
               <a href="https://www.google.com/maps" target="_blank" rel="noopener noreferrer">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="40"
                   height="40" viewBox="0 0 24 24" stroke-width="1" stroke="#009988" fill="none" stroke-linecap="round"
@@ -112,7 +135,7 @@
               </a>
             </div>
 
-            <div>
+            <div class="responsive">
               <a href="#" target="_blank" rel="noopener noreferrer">
                 <svg class="favoritos" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-heart"
                   width="40" height="40" viewBox="0 0 24 24" stroke-width="1" stroke="#009988" fill="none"
@@ -123,8 +146,8 @@
               </a>
             </div>
 
-            <div>
-              <!--               <button class="btnLogim-popup"> Login</button> -->
+            <div class="responsive">
+              <button class="btnloginr btnLogin-popup"> Login</button>
               <a href="#" target="_blank" rel="noopener noreferrer">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="40" height="40"
                   viewBox="0 0 24 24" stroke-width="1" stroke="#009988" fill="none" stroke-linecap="round"
@@ -136,7 +159,7 @@
               </a>
             </div>
 
-            <div>
+            <div class="responsive">
               <a href="#" target="_blank" rel="noopener noreferrer">
                 <svg class="cesta" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-basket"
                   width="40" height="40" viewBox="0 0 24 24" stroke-width="1" stroke="#009988" fill="none"
@@ -145,6 +168,19 @@
                   <polyline points="7 10 12 4 17 10" />
                   <path d="M21 10l-2 8a2 2.5 0 0 1 -2 2h-10a2 2.5 0 0 1 -2 -2l-2 -8z" />
                   <circle cx="12" cy="15" r="2" />
+                </svg>
+              </a>
+            </div>
+
+            <div>
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class=" menuResponsive icon icon-tabler icon-tabler-menu-2"
+                  width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#009988" fill="none"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <line x1="4" y1="6" x2="20" y2="6" />
+                  <line x1="4" y1="12" x2="20" y2="12" />
+                  <line x1="4" y1="18" x2="20" y2="18" />
                 </svg>
               </a>
             </div>
@@ -222,7 +258,7 @@
             <div class="fondoJardin">
               <div class="filasJardin">
                 <div class="menuJardin">
-                  <div>
+                  <div class="desaparecer">
                     <img src="img/icono_plantas-estanteria.png">
                   </div>
                   <div>
@@ -261,7 +297,7 @@
                 </div>
 
                 <div class="menuJardin">
-                  <div>
+                  <div class="desaparecer">
                   </div>
                   <div>
                     <h2>Antiplagas</h2>
@@ -547,15 +583,6 @@
           Hoja verde
         </h3>
       </div>
-
-      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-up-left-circle" width="44"
-        height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#009988" fill="none" stroke-linecap="round"
-        stroke-linejoin="round">
-        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-        <circle cx="12" cy="12" r="9" />
-        <line x1="9" y1="9" x2="15" y2="15" />
-        <polyline points="15 9 9 9 9 15" />
-      </svg>
 
       <div class="botones">
         <div class="contenedor imagenes">
@@ -1322,6 +1349,7 @@
         <div class="tituloDiferente">
           <h3>
             Somos eco-friendly
+            <span> ......</span>
           </h3>
 
           <div class="diferentesTexto">
@@ -1336,6 +1364,7 @@
         <div class="tituloDiferente">
           <h3>
             Mejor calidad
+            <span> wwwwwwwwwwwww</span>
           </h3>
 
           <div class="diferentesTexto">
@@ -1350,6 +1379,7 @@
         <div class="tituloDiferente">
           <h3>
             Somos expertos
+            <span> wwwwwwwwwwwww</span>
           </h3>
 
           <div class="diferentesTexto">
@@ -1676,6 +1706,9 @@
 
 
   <script src="js/script.js"></script>
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
   <div class="name">
     <div> </div>
