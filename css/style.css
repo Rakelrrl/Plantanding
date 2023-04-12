@@ -826,6 +826,11 @@ body::-webkit-scrollbar-thumb {
   text-align: center;
 }
 
+.boton a{
+  text-decoration: none;
+  color: white;
+}
+
 .boton:hover {
   box-shadow: 19px 23px 20px -10px rgba(0, 0, 0, 1);
   transform: scale(100%);
